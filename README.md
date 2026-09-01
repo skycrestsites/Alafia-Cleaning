@@ -27,8 +27,8 @@ A fast, fully responsive, mobile-optimized static website built with HTML and Ta
 
 ## Contact
 
-- Phone: (609) 227-1617
-- Email: edwardkfitness@gmail.com
+- Phone: (817) 701-4172
+- Email: contact@alafiacleaning.com
 - Instagram: [@alafiacleaning](https://instagram.com/alafiacleaning)
 
 ## Deploying
