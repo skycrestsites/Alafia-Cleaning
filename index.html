@@ -42,6 +42,8 @@
     .dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
     .dropdown-menu { opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all .2s ease; }
     ::selection { background: #0f93fe; color: #ffffff; }
+    #scroll-cta { transform: translateY(120%); transition: transform .5s cubic-bezier(.2,.7,.2,1); }
+    #scroll-cta.cta-show { transform: translateY(0); }
 </style>
 </head>
 <body class="bg-white text-ink font-display">
@@ -483,6 +485,21 @@ Dependable, detail-focused cleaning that takes the work off your plate. Book in 
 </div>
 </section>
 </main>
+<!-- Slide-up Quote CTA -->
+<div id="scroll-cta" class="fixed bottom-0 inset-x-0 z-40">
+<div class="bg-charcoal/95 backdrop-blur border-t border-white/10 shadow-2xl">
+<div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+<div class="flex items-center gap-3 min-w-0">
+<span class="material-symbols-outlined text-brand text-3xl hidden sm:block">cleaning_services</span>
+<div class="min-w-0">
+<p class="text-white font-bold leading-tight">Need a quote?</p>
+<p class="text-white/70 text-sm hidden sm:block">One of our team will contact you shortly, free of charge.</p>
+</div>
+</div>
+<a href="#contact" class="flex-shrink-0 inline-flex items-center gap-2 rounded-lg bg-brand px-6 py-3 font-extrabold text-white hover:bg-brand-dark transition-all">Get Quote <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+</div>
+</div>
 <!-- Footer -->
 <footer class="bg-charcoal pt-16 pb-10 text-white/70">
 <div class="max-w-7xl mx-auto px-4">
@@ -560,6 +577,24 @@ Dependable, detail-focused cleaning that takes the work off your plate. Book in 
             });
         }, { threshold: 0.12 });
         els.forEach(function (el) { io.observe(el); });
+    })();
+    // Slide-up quote CTA: appears after scrolling past 2 sections, hides once the form is reached
+    (function () {
+        const cta = document.getElementById('scroll-cta');
+        const sections = document.querySelectorAll('main > section');
+        const contact = document.getElementById('contact');
+        if (!cta || sections.length < 2) return;
+        function update() {
+            const secondBottom = sections[1].offsetTop + sections[1].offsetHeight;
+            const passedTwo = (window.scrollY + window.innerHeight * 0.9) > secondBottom;
+            let reachedForm = false;
+            if (contact) { reachedForm = contact.getBoundingClientRect().top < window.innerHeight; }
+            if (passedTwo && !reachedForm) { cta.classList.add('cta-show'); }
+            else { cta.classList.remove('cta-show'); }
+        }
+        window.addEventListener('scroll', update, { passive: true });
+        window.addEventListener('resize', update);
+        update();
     })();
 </script>
 </body>
