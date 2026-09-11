@@ -19,11 +19,12 @@
         theme: {
             extend: {
                 colors: {
-                    gold: "#ffe100",
-                    ink: "#0a0a0a",
-                    panel: "#141414",
-                    panel2: "#1c1c1c",
-                    muted: "#9a9a9a",
+                    brand: "#0f93fe",
+                    "brand-dark": "#0c78d4",
+                    charcoal: "#3a3a3a",
+                    ink: "#111827",
+                    muted: "#6b7280",
+                    surface: "#f4f6f8",
                 },
                 fontFamily: { display: ["Manrope", "sans-serif"] },
             },
@@ -38,229 +39,227 @@
     .reveal.in { opacity: 1; transform: none; }
     .card-hover { transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
     .card-hover:hover { transform: translateY(-6px); }
-    @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-    .animate-marquee { animation: marquee 28s linear infinite; }
     .dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
     .dropdown-menu { opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all .2s ease; }
-    ::selection { background: #ffe100; color: #0a0a0a; }
+    ::selection { background: #0f93fe; color: #ffffff; }
 </style>
 </head>
-<body class="bg-ink text-white font-display">
+<body class="bg-white text-ink font-display">
 <!-- Header -->
-<header class="sticky top-0 z-50 w-full border-b border-white/10 bg-ink/90 backdrop-blur-md">
+<header class="sticky top-0 z-50 w-full bg-charcoal shadow-md">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex h-20 items-center justify-between">
 <a href="index.html" class="flex items-center gap-3">
-<img src="https://firebasestorage.googleapis.com/v0/b/skycrestwebapp.firebasestorage.app/o/clients%2FYH0XnyEt9phb3xmXCcH5PGbfjrw1%2Flogo%2F27238747-786B-44A3-A41D-9ADD5075875E.PNG?alt=media&token=0fb71575-ac26-4e11-80f5-733cb5cea823" alt="Alafia Cleaning logo" class="h-12 w-12 rounded-lg object-contain"/>
-<span class="text-xl font-extrabold tracking-tight leading-none">Alafia <span class="text-gold">Cleaning</span></span>
+<img src="https://firebasestorage.googleapis.com/v0/b/skycrestwebapp.firebasestorage.app/o/clients%2FYH0XnyEt9phb3xmXCcH5PGbfjrw1%2Flogo%2F27238747-786B-44A3-A41D-9ADD5075875E.PNG?alt=media&token=0fb71575-ac26-4e11-80f5-733cb5cea823" alt="Alafia Cleaning logo" class="h-12 w-12 rounded-lg object-contain bg-white/10 p-1"/>
+<span class="text-xl font-extrabold tracking-tight leading-none text-white">Alafia <span class="text-brand">Cleaning</span></span>
 </a>
 <nav class="hidden lg:flex items-center gap-8">
-<a class="text-sm font-semibold text-white/90 hover:text-gold transition-colors" href="index.html">Home</a>
+<a class="text-sm font-semibold text-white/90 hover:text-brand transition-colors" href="index.html">Home</a>
 <div class="dropdown relative group">
-<a class="text-sm font-semibold text-white/90 hover:text-gold transition-colors cursor-pointer flex items-center gap-1" href="#services">Services <span class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span></a>
+<a class="text-sm font-semibold text-white/90 hover:text-brand transition-colors cursor-pointer flex items-center gap-1" href="#services">Services <span class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span></a>
 <div class="dropdown-menu absolute left-0 top-full pt-3">
-<div class="bg-panel shadow-2xl rounded-xl border border-white/10 overflow-hidden min-w-[260px]">
-<a class="block px-5 py-3 hover:bg-gold hover:text-ink transition-colors text-sm font-medium border-b border-white/5" href="regular-house-cleaning.html">Regular House Cleaning</a>
-<a class="block px-5 py-3 hover:bg-gold hover:text-ink transition-colors text-sm font-medium border-b border-white/5" href="deep-cleaning.html">Deep Cleaning</a>
-<a class="block px-5 py-3 hover:bg-gold hover:text-ink transition-colors text-sm font-medium border-b border-white/5" href="office-commercial-cleaning.html">Office / Commercial Cleaning</a>
-<a class="block px-5 py-3 hover:bg-gold hover:text-ink transition-colors text-sm font-medium border-b border-white/5" href="airbnb-rental-turnover.html">Airbnb / Rental Turnover</a>
-<a class="block px-5 py-3 hover:bg-gold hover:text-ink transition-colors text-sm font-medium border-b border-white/5" href="move-in-move-out-cleaning.html">Move In / Move Out Cleaning</a>
-<a class="block px-5 py-3 hover:bg-gold hover:text-ink transition-colors text-sm font-medium" href="carpet-cleaning.html">Carpet Cleaning</a>
+<div class="bg-white shadow-2xl rounded-xl border border-slate-200 overflow-hidden min-w-[260px]">
+<a class="block px-5 py-3 hover:bg-brand hover:text-white transition-colors text-sm font-medium border-b border-slate-100 text-ink" href="regular-house-cleaning.html">Regular House Cleaning</a>
+<a class="block px-5 py-3 hover:bg-brand hover:text-white transition-colors text-sm font-medium border-b border-slate-100 text-ink" href="deep-cleaning.html">Deep Cleaning</a>
+<a class="block px-5 py-3 hover:bg-brand hover:text-white transition-colors text-sm font-medium border-b border-slate-100 text-ink" href="office-commercial-cleaning.html">Office / Commercial Cleaning</a>
+<a class="block px-5 py-3 hover:bg-brand hover:text-white transition-colors text-sm font-medium border-b border-slate-100 text-ink" href="airbnb-rental-turnover.html">Airbnb / Rental Turnover</a>
+<a class="block px-5 py-3 hover:bg-brand hover:text-white transition-colors text-sm font-medium border-b border-slate-100 text-ink" href="move-in-move-out-cleaning.html">Move In / Move Out Cleaning</a>
+<a class="block px-5 py-3 hover:bg-brand hover:text-white transition-colors text-sm font-medium text-ink" href="carpet-cleaning.html">Carpet Cleaning</a>
 </div>
 </div>
 </div>
-<a class="text-sm font-semibold text-white/90 hover:text-gold transition-colors" href="#about">About</a>
-<a class="text-sm font-semibold text-white/90 hover:text-gold transition-colors" href="#areas">Areas</a>
-<a class="text-sm font-semibold text-white/90 hover:text-gold transition-colors" href="#reviews">Reviews</a>
-<a class="text-sm font-semibold text-white/90 hover:text-gold transition-colors" href="#faq">FAQ</a>
+<a class="text-sm font-semibold text-white/90 hover:text-brand transition-colors" href="#about">About</a>
+<a class="text-sm font-semibold text-white/90 hover:text-brand transition-colors" href="#areas">Areas</a>
+<a class="text-sm font-semibold text-white/90 hover:text-brand transition-colors" href="#reviews">Reviews</a>
+<a class="text-sm font-semibold text-white/90 hover:text-brand transition-colors" href="#faq">FAQ</a>
 </nav>
 <div class="flex items-center gap-3">
-<a href="tel:+18177014172" class="hidden sm:flex items-center gap-2 text-sm font-bold text-white hover:text-gold transition-colors"><span class="material-symbols-outlined text-lg">call</span>(817) 701-4172</a>
-<a href="#contact" class="hidden sm:inline-flex items-center justify-center rounded-lg bg-gold px-5 py-2.5 text-sm font-extrabold text-ink hover:brightness-95 transition-all">Request a Quote</a>
-<button id="menu-btn" aria-label="Open menu" class="lg:hidden flex items-center justify-center h-11 w-11 rounded-lg text-gold hover:bg-white/5"><span class="material-symbols-outlined text-3xl">menu</span></button>
+<a href="tel:+18177014172" class="hidden sm:flex items-center gap-2 text-sm font-bold text-white hover:text-brand transition-colors"><span class="material-symbols-outlined text-lg">call</span>(817) 701-4172</a>
+<a href="#contact" class="hidden sm:inline-flex items-center justify-center rounded-lg bg-brand px-5 py-2.5 text-sm font-extrabold text-white hover:bg-brand-dark transition-all">Request a Quote</a>
+<button id="menu-btn" aria-label="Open menu" class="lg:hidden flex items-center justify-center h-11 w-11 rounded-lg text-white hover:bg-white/10"><span class="material-symbols-outlined text-3xl">menu</span></button>
 </div>
 </div>
 </div>
-<div id="mobile-menu" class="hidden lg:hidden border-t border-white/10 bg-ink">
+<div id="mobile-menu" class="hidden lg:hidden border-t border-white/10 bg-charcoal">
 <nav class="px-4 py-4 flex flex-col gap-1">
-<a class="rounded-lg px-4 py-3 font-semibold hover:bg-white/5" href="index.html">Home</a>
-<span class="px-4 pt-3 pb-1 text-xs font-bold uppercase tracking-wider text-muted">Services</span>
-<a class="rounded-lg px-4 py-2.5 text-sm hover:bg-white/5" href="regular-house-cleaning.html">Regular House Cleaning</a>
-<a class="rounded-lg px-4 py-2.5 text-sm hover:bg-white/5" href="deep-cleaning.html">Deep Cleaning</a>
-<a class="rounded-lg px-4 py-2.5 text-sm hover:bg-white/5" href="office-commercial-cleaning.html">Office / Commercial Cleaning</a>
-<a class="rounded-lg px-4 py-2.5 text-sm hover:bg-white/5" href="airbnb-rental-turnover.html">Airbnb / Rental Turnover</a>
-<a class="rounded-lg px-4 py-2.5 text-sm hover:bg-white/5" href="move-in-move-out-cleaning.html">Move In / Move Out Cleaning</a>
-<a class="rounded-lg px-4 py-2.5 text-sm hover:bg-white/5" href="carpet-cleaning.html">Carpet Cleaning</a>
-<a class="rounded-lg px-4 py-3 font-semibold hover:bg-white/5" href="#about">About</a>
-<a class="rounded-lg px-4 py-3 font-semibold hover:bg-white/5" href="#areas">Areas We Serve</a>
-<a class="rounded-lg px-4 py-3 font-semibold hover:bg-white/5" href="#reviews">Reviews</a>
-<a class="rounded-lg px-4 py-3 font-semibold hover:bg-white/5" href="#faq">FAQ</a>
-<a href="#contact" class="mt-2 rounded-lg bg-gold px-4 py-3 text-center font-extrabold text-ink">Request a Quote</a>
-<a href="tel:+18177014172" class="rounded-lg border border-gold/40 px-4 py-3 text-center font-bold text-gold">Call (817) 701-4172</a>
+<a class="rounded-lg px-4 py-3 font-semibold text-white hover:bg-white/10" href="index.html">Home</a>
+<span class="px-4 pt-3 pb-1 text-xs font-bold uppercase tracking-wider text-white/50">Services</span>
+<a class="rounded-lg px-4 py-2.5 text-sm text-white/90 hover:bg-white/10" href="regular-house-cleaning.html">Regular House Cleaning</a>
+<a class="rounded-lg px-4 py-2.5 text-sm text-white/90 hover:bg-white/10" href="deep-cleaning.html">Deep Cleaning</a>
+<a class="rounded-lg px-4 py-2.5 text-sm text-white/90 hover:bg-white/10" href="office-commercial-cleaning.html">Office / Commercial Cleaning</a>
+<a class="rounded-lg px-4 py-2.5 text-sm text-white/90 hover:bg-white/10" href="airbnb-rental-turnover.html">Airbnb / Rental Turnover</a>
+<a class="rounded-lg px-4 py-2.5 text-sm text-white/90 hover:bg-white/10" href="move-in-move-out-cleaning.html">Move In / Move Out Cleaning</a>
+<a class="rounded-lg px-4 py-2.5 text-sm text-white/90 hover:bg-white/10" href="carpet-cleaning.html">Carpet Cleaning</a>
+<a class="rounded-lg px-4 py-3 font-semibold text-white hover:bg-white/10" href="#about">About</a>
+<a class="rounded-lg px-4 py-3 font-semibold text-white hover:bg-white/10" href="#areas">Areas We Serve</a>
+<a class="rounded-lg px-4 py-3 font-semibold text-white hover:bg-white/10" href="#reviews">Reviews</a>
+<a class="rounded-lg px-4 py-3 font-semibold text-white hover:bg-white/10" href="#faq">FAQ</a>
+<a href="#contact" class="mt-2 rounded-lg bg-brand px-4 py-3 text-center font-extrabold text-white">Request a Quote</a>
+<a href="tel:+18177014172" class="rounded-lg border border-white/30 px-4 py-3 text-center font-bold text-white">Call (817) 701-4172</a>
 </nav>
 </div>
 </header>
 <main>
 <!-- Hero -->
-<section class="relative overflow-hidden">
+<section class="relative overflow-hidden bg-surface">
 <div class="absolute inset-0 z-0">
-<div class="w-full h-full bg-center bg-cover" style="background-image: url('https://images.pexels.com/photos/8055202/pexels-photo-8055202.jpeg?auto=compress&cs=tinysrgb&w=1920');"></div>
-<div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/90 to-ink/40"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/60"></div>
+<div class="w-full h-full bg-center bg-cover" style="background-image: url('https://images.pexels.com/photos/37734652/pexels-photo-37734652.jpeg?auto=compress&cs=tinysrgb&w=1920');"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/40"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-white/70 via-transparent to-transparent"></div>
 </div>
 <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-36">
 <div class="max-w-3xl reveal">
-<span class="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-bold text-gold mb-6 uppercase tracking-widest">Mansfield, TX and surrounding communities</span>
-<h1 class="text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight mb-6">
-Home, office, or Airbnb? <span class="text-gold">Let us clean it.</span>
+<span class="inline-flex items-center gap-2 rounded-full border border-brand/30 bg-brand/10 px-4 py-1.5 text-xs font-bold text-brand mb-6 uppercase tracking-widest">Mansfield, TX and surrounding communities</span>
+<h1 class="text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight mb-6 text-ink">
+Home, office, or Airbnb? <span class="text-brand">Let us clean it.</span>
 </h1>
-<p class="text-lg lg:text-xl text-white/80 mb-10 max-w-2xl leading-relaxed">
+<p class="text-lg lg:text-xl text-muted mb-10 max-w-2xl leading-relaxed">
 Dependable, detail-focused cleaning that takes the work off your plate. Book in about 60 seconds and enjoy a space you never have to worry about.
 </p>
 <div class="flex flex-col sm:flex-row gap-4">
-<a href="#contact" class="inline-flex items-center justify-center gap-2 rounded-lg bg-gold px-8 py-4 text-base font-extrabold text-ink shadow-xl shadow-gold/10 hover:brightness-95 hover:-translate-y-0.5 transition-all">Request a Free Quote <span class="material-symbols-outlined">arrow_forward</span></a>
-<a href="tel:+18177014172" class="inline-flex items-center justify-center gap-2 rounded-lg border border-white/20 px-8 py-4 text-base font-bold text-white hover:border-gold hover:text-gold transition-all"><span class="material-symbols-outlined">call</span>(817) 701-4172</a>
+<a href="#contact" class="inline-flex items-center justify-center gap-2 rounded-lg bg-brand px-8 py-4 text-base font-extrabold text-white shadow-xl shadow-brand/20 hover:bg-brand-dark hover:-translate-y-0.5 transition-all">Request a Free Quote <span class="material-symbols-outlined">arrow_forward</span></a>
+<a href="tel:+18177014172" class="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-ink/15 px-8 py-4 text-base font-bold text-ink hover:border-brand hover:text-brand transition-all"><span class="material-symbols-outlined">call</span>(817) 701-4172</a>
 </div>
-<div class="mt-10 flex flex-wrap items-center gap-x-7 gap-y-3 text-sm font-semibold text-white/80">
-<span class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">verified_user</span>Fully Insured</span>
-<span class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">pets</span>Pet Friendly</span>
-<span class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">badge</span>Background Checked</span>
+<div class="mt-10 flex flex-wrap items-center gap-x-7 gap-y-3 text-sm font-semibold text-ink/80">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-brand">verified_user</span>Fully Insured</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-brand">pets</span>Pet Friendly</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-brand">badge</span>Background Checked</span>
 </div>
 </div>
 </div>
 </section>
 <!-- Services -->
-<section id="services" class="py-20 lg:py-28 bg-ink">
+<section id="services" class="py-20 lg:py-28 bg-white">
 <div class="max-w-7xl mx-auto px-4">
 <div class="text-center max-w-2xl mx-auto mb-14 reveal">
-<span class="text-sm font-bold uppercase tracking-widest text-gold">Our Services</span>
-<h2 class="text-3xl lg:text-5xl font-black tracking-tight mt-3 mb-4">Cleaning Built Around Your Needs</h2>
+<span class="text-sm font-bold uppercase tracking-widest text-brand">Our Services</span>
+<h2 class="text-3xl lg:text-5xl font-black tracking-tight mt-3 mb-4 text-ink">Cleaning Built Around Your Needs</h2>
 <p class="text-muted">From recurring house cleaning to move-out days, we handle the work so you can focus on everything else.</p>
 </div>
 <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<a href="regular-house-cleaning.html" class="group rounded-2xl overflow-hidden bg-panel border border-white/10 hover:border-gold/60 card-hover reveal">
+<a href="regular-house-cleaning.html" class="group rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:border-brand card-hover reveal">
 <div class="aspect-[4/3] overflow-hidden"><div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" style="background-image: url('https://images.pexels.com/photos/27176673/pexels-photo-27176673.jpeg?auto=compress&cs=tinysrgb&w=800');"></div></div>
 <div class="p-6">
-<h3 class="text-xl font-bold mb-2">Regular House Cleaning</h3>
+<h3 class="text-xl font-bold mb-2 text-ink">Regular House Cleaning</h3>
 <p class="text-muted text-sm mb-4">Consistent recurring cleaning that keeps your home fresh.</p>
-<span class="inline-flex items-center gap-1 font-bold text-gold text-sm">More Info <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></span>
+<span class="inline-flex items-center gap-1 font-bold text-brand text-sm">More Info <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></span>
 </div>
 </a>
-<a href="deep-cleaning.html" class="group rounded-2xl overflow-hidden bg-panel border border-white/10 hover:border-gold/60 card-hover reveal">
+<a href="deep-cleaning.html" class="group rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:border-brand card-hover reveal">
 <div class="aspect-[4/3] overflow-hidden"><div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" style="background-image: url('https://images.pexels.com/photos/5591852/pexels-photo-5591852.jpeg?auto=compress&cs=tinysrgb&w=800');"></div></div>
 <div class="p-6">
-<h3 class="text-xl font-bold mb-2">Deep Cleaning</h3>
+<h3 class="text-xl font-bold mb-2 text-ink">Deep Cleaning</h3>
 <p class="text-muted text-sm mb-4">A top-to-bottom reset for a truly fresh start.</p>
-<span class="inline-flex items-center gap-1 font-bold text-gold text-sm">More Info <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></span>
+<span class="inline-flex items-center gap-1 font-bold text-brand text-sm">More Info <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></span>
 </div>
 </a>
-<a href="office-commercial-cleaning.html" class="group rounded-2xl overflow-hidden bg-panel border border-white/10 hover:border-gold/60 card-hover reveal">
+<a href="office-commercial-cleaning.html" class="group rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:border-brand card-hover reveal">
 <div class="aspect-[4/3] overflow-hidden"><div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" style="background-image: url('https://images.pexels.com/photos/34516670/pexels-photo-34516670.jpeg?auto=compress&cs=tinysrgb&w=800');"></div></div>
 <div class="p-6">
-<h3 class="text-xl font-bold mb-2">Office / Commercial</h3>
+<h3 class="text-xl font-bold mb-2 text-ink">Office / Commercial</h3>
 <p class="text-muted text-sm mb-4">A clean workspace your team and clients notice.</p>
-<span class="inline-flex items-center gap-1 font-bold text-gold text-sm">More Info <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></span>
+<span class="inline-flex items-center gap-1 font-bold text-brand text-sm">More Info <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></span>
 </div>
 </a>
-<a href="move-in-move-out-cleaning.html" class="group rounded-2xl overflow-hidden bg-panel border border-white/10 hover:border-gold/60 card-hover reveal">
+<a href="move-in-move-out-cleaning.html" class="group rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:border-brand card-hover reveal">
 <div class="aspect-[4/3] overflow-hidden"><div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" style="background-image: url('https://images.pexels.com/photos/18041820/pexels-photo-18041820.jpeg?auto=compress&cs=tinysrgb&w=800');"></div></div>
 <div class="p-6">
-<h3 class="text-xl font-bold mb-2">Move In / Move Out</h3>
+<h3 class="text-xl font-bold mb-2 text-ink">Move In / Move Out</h3>
 <p class="text-muted text-sm mb-4">Leave it spotless or start fresh in a clean space.</p>
-<span class="inline-flex items-center gap-1 font-bold text-gold text-sm">More Info <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></span>
+<span class="inline-flex items-center gap-1 font-bold text-brand text-sm">More Info <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></span>
 </div>
 </a>
 </div>
 <!-- Specialty Services -->
 <div class="text-center max-w-2xl mx-auto mt-20 mb-10 reveal">
-<span class="text-sm font-bold uppercase tracking-widest text-gold">Specialty Services</span>
-<h2 class="text-3xl lg:text-4xl font-black tracking-tight mt-3">A Little Extra Care</h2>
+<span class="text-sm font-bold uppercase tracking-widest text-brand">Specialty Services</span>
+<h2 class="text-3xl lg:text-4xl font-black tracking-tight mt-3 text-ink">A Little Extra Care</h2>
 </div>
 <div class="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
-<a href="airbnb-rental-turnover.html" class="group rounded-2xl overflow-hidden bg-panel border border-white/10 hover:border-gold/60 card-hover reveal flex">
+<a href="airbnb-rental-turnover.html" class="group rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:border-brand card-hover reveal flex">
 <div class="w-2/5 overflow-hidden"><div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700 min-h-[160px]" style="background-image: url('https://images.pexels.com/photos/9462738/pexels-photo-9462738.jpeg?auto=compress&cs=tinysrgb&w=600');"></div></div>
 <div class="w-3/5 p-6">
-<h3 class="text-xl font-bold mb-2">Airbnb / Rental Turnover</h3>
+<h3 class="text-xl font-bold mb-2 text-ink">Airbnb / Rental Turnover</h3>
 <p class="text-muted text-sm mb-4">Guest-ready turnovers on a schedule you can trust.</p>
-<span class="inline-flex items-center gap-1 font-bold text-gold text-sm">More Info <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></span>
+<span class="inline-flex items-center gap-1 font-bold text-brand text-sm">More Info <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></span>
 </div>
 </a>
-<a href="carpet-cleaning.html" class="group rounded-2xl overflow-hidden bg-panel border border-white/10 hover:border-gold/60 card-hover reveal flex">
+<a href="carpet-cleaning.html" class="group rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:border-brand card-hover reveal flex">
 <div class="w-2/5 overflow-hidden"><div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700 min-h-[160px]" style="background-image: url('https://images.pexels.com/photos/9462316/pexels-photo-9462316.jpeg?auto=compress&cs=tinysrgb&w=600');"></div></div>
 <div class="w-3/5 p-6">
-<h3 class="text-xl font-bold mb-2">Carpet Cleaning</h3>
+<h3 class="text-xl font-bold mb-2 text-ink">Carpet Cleaning</h3>
 <p class="text-muted text-sm mb-4">Refreshed carpets that look and feel clean again.</p>
-<span class="inline-flex items-center gap-1 font-bold text-gold text-sm">More Info <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></span>
+<span class="inline-flex items-center gap-1 font-bold text-brand text-sm">More Info <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></span>
 </div>
 </a>
 </div>
 </div>
 </section>
 <!-- Quote Band -->
-<section class="bg-gold text-ink">
+<section class="bg-brand text-white">
 <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left reveal">
 <div>
 <h2 class="text-2xl lg:text-3xl font-black tracking-tight">Not sure which clean you need?</h2>
-<p class="font-semibold text-ink/80">Tell us about your space and we will point you in the right direction.</p>
+<p class="font-semibold text-white/90">Tell us about your space and we will point you in the right direction.</p>
 </div>
-<a href="#contact" class="inline-flex items-center justify-center gap-2 rounded-lg bg-ink px-8 py-4 text-base font-extrabold text-gold hover:bg-black transition-all whitespace-nowrap">Get a Free Quote <span class="material-symbols-outlined">arrow_forward</span></a>
+<a href="#contact" class="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-8 py-4 text-base font-extrabold text-brand hover:bg-slate-100 transition-all whitespace-nowrap">Get a Free Quote <span class="material-symbols-outlined">arrow_forward</span></a>
 </div>
 </section>
 <!-- Easy 3 Step Process -->
-<section class="py-20 lg:py-28 bg-panel">
+<section class="py-20 lg:py-28 bg-surface">
 <div class="max-w-7xl mx-auto px-4">
 <div class="text-center max-w-2xl mx-auto mb-16 reveal">
-<span class="text-sm font-bold uppercase tracking-widest text-gold">How It Works</span>
-<h2 class="text-3xl lg:text-5xl font-black tracking-tight mt-3">An Easy 3 Step Process</h2>
+<span class="text-sm font-bold uppercase tracking-widest text-brand">How It Works</span>
+<h2 class="text-3xl lg:text-5xl font-black tracking-tight mt-3 text-ink">An Easy 3 Step Process</h2>
 </div>
 <div class="grid md:grid-cols-3 gap-8">
-<div class="relative rounded-2xl bg-ink border border-white/10 p-8 card-hover reveal">
-<div class="text-6xl font-black text-gold/20 mb-4">01</div>
-<h3 class="text-xl font-bold mb-2">Reach Out</h3>
+<div class="relative rounded-2xl bg-white border border-slate-200 shadow-sm p-8 card-hover reveal">
+<div class="text-6xl font-black text-brand/20 mb-4">01</div>
+<h3 class="text-xl font-bold mb-2 text-ink">Reach Out</h3>
 <p class="text-muted text-sm leading-relaxed">Send the quote form, call, or email. Tell us about your space and what you need.</p>
 </div>
-<div class="relative rounded-2xl bg-ink border border-white/10 p-8 card-hover reveal">
-<div class="text-6xl font-black text-gold/20 mb-4">02</div>
-<h3 class="text-xl font-bold mb-2">Choose Your Schedule</h3>
+<div class="relative rounded-2xl bg-white border border-slate-200 shadow-sm p-8 card-hover reveal">
+<div class="text-6xl font-black text-brand/20 mb-4">02</div>
+<h3 class="text-xl font-bold mb-2 text-ink">Choose Your Schedule</h3>
 <p class="text-muted text-sm leading-relaxed">Pick one-time, weekly, bi-weekly, or monthly, and share any notes or preferences.</p>
 </div>
-<div class="relative rounded-2xl bg-ink border border-white/10 p-8 card-hover reveal">
-<div class="text-6xl font-black text-gold/20 mb-4">03</div>
-<h3 class="text-xl font-bold mb-2">Relax While We Clean</h3>
+<div class="relative rounded-2xl bg-white border border-slate-200 shadow-sm p-8 card-hover reveal">
+<div class="text-6xl font-black text-brand/20 mb-4">03</div>
+<h3 class="text-xl font-bold mb-2 text-ink">Relax While We Clean</h3>
 <p class="text-muted text-sm leading-relaxed">Our team arrives fully equipped, does the job right, and leaves your space fresh.</p>
 </div>
 </div>
 </div>
 </section>
 <!-- What Makes Us Different -->
-<section id="about" class="py-20 lg:py-28 bg-ink">
+<section id="about" class="py-20 lg:py-28 bg-white">
 <div class="max-w-7xl mx-auto px-4">
 <div class="grid lg:grid-cols-2 gap-14 items-center">
 <div class="reveal">
-<span class="text-sm font-bold uppercase tracking-widest text-gold">What Makes Us Different</span>
-<h2 class="text-3xl lg:text-5xl font-black tracking-tight mt-3 mb-5">A Cleaning Service You Can Actually Rely On</h2>
+<span class="text-sm font-bold uppercase tracking-widest text-brand">What Makes Us Different</span>
+<h2 class="text-3xl lg:text-5xl font-black tracking-tight mt-3 mb-5 text-ink">A Cleaning Service You Can Actually Rely On</h2>
 <p class="text-muted leading-relaxed mb-8">We built Alafia Cleaning for homeowners and businesses who value consistency, clear communication, and a clean space they never have to think about. Every clean is handled with care, from the first message to the final walkthrough.</p>
-<a href="#contact" class="inline-flex items-center justify-center gap-2 rounded-lg bg-gold px-8 py-4 text-base font-extrabold text-ink hover:brightness-95 transition-all">Book Your Clean <span class="material-symbols-outlined">arrow_forward</span></a>
+<a href="#contact" class="inline-flex items-center justify-center gap-2 rounded-lg bg-brand px-8 py-4 text-base font-extrabold text-white hover:bg-brand-dark transition-all">Book Your Clean <span class="material-symbols-outlined">arrow_forward</span></a>
 </div>
 <div class="grid sm:grid-cols-2 gap-5">
-<div class="rounded-2xl bg-panel border border-white/10 p-7 card-hover reveal">
-<div class="w-12 h-12 rounded-lg bg-gold/15 flex items-center justify-center text-gold mb-4"><span class="material-symbols-outlined text-2xl">workspace_premium</span></div>
-<h3 class="font-bold mb-2">High Standards</h3>
+<div class="rounded-2xl bg-surface border border-slate-200 p-7 card-hover reveal">
+<div class="w-12 h-12 rounded-lg bg-brand/10 flex items-center justify-center text-brand mb-4"><span class="material-symbols-outlined text-2xl">workspace_premium</span></div>
+<h3 class="font-bold mb-2 text-ink">High Standards</h3>
 <p class="text-muted text-sm leading-relaxed">Background checked, insured, and detail-focused. We clean the spots most services rush past.</p>
 </div>
-<div class="rounded-2xl bg-panel border border-white/10 p-7 card-hover reveal">
-<div class="w-12 h-12 rounded-lg bg-gold/15 flex items-center justify-center text-gold mb-4"><span class="material-symbols-outlined text-2xl">pets</span></div>
-<h3 class="font-bold mb-2">Safe &amp; Pet Friendly</h3>
+<div class="rounded-2xl bg-surface border border-slate-200 p-7 card-hover reveal">
+<div class="w-12 h-12 rounded-lg bg-brand/10 flex items-center justify-center text-brand mb-4"><span class="material-symbols-outlined text-2xl">pets</span></div>
+<h3 class="font-bold mb-2 text-ink">Safe &amp; Pet Friendly</h3>
 <p class="text-muted text-sm leading-relaxed">Careful, considerate cleaning that keeps your family and pets comfortable.</p>
 </div>
-<div class="rounded-2xl bg-panel border border-white/10 p-7 card-hover reveal">
-<div class="w-12 h-12 rounded-lg bg-gold/15 flex items-center justify-center text-gold mb-4"><span class="material-symbols-outlined text-2xl">chat</span></div>
-<h3 class="font-bold mb-2">Clear Communication</h3>
+<div class="rounded-2xl bg-surface border border-slate-200 p-7 card-hover reveal">
+<div class="w-12 h-12 rounded-lg bg-brand/10 flex items-center justify-center text-brand mb-4"><span class="material-symbols-outlined text-2xl">chat</span></div>
+<h3 class="font-bold mb-2 text-ink">Clear Communication</h3>
 <p class="text-muted text-sm leading-relaxed">Easy online booking and straightforward updates. No guesswork, no chasing.</p>
 </div>
-<div class="rounded-2xl bg-panel border border-white/10 p-7 card-hover reveal">
-<div class="w-12 h-12 rounded-lg bg-gold/15 flex items-center justify-center text-gold mb-4"><span class="material-symbols-outlined text-2xl">location_city</span></div>
-<h3 class="font-bold mb-2">Local Business</h3>
+<div class="rounded-2xl bg-surface border border-slate-200 p-7 card-hover reveal">
+<div class="w-12 h-12 rounded-lg bg-brand/10 flex items-center justify-center text-brand mb-4"><span class="material-symbols-outlined text-2xl">location_city</span></div>
+<h3 class="font-bold mb-2 text-ink">Local Business</h3>
 <p class="text-muted text-sm leading-relaxed">Proudly serving Mansfield and nearby communities with dependable, recurring service.</p>
 </div>
 </div>
@@ -268,28 +267,28 @@ Dependable, detail-focused cleaning that takes the work off your plate. Book in 
 </div>
 </section>
 <!-- Areas Served -->
-<section id="areas" class="py-20 lg:py-28 bg-panel">
+<section id="areas" class="py-20 lg:py-28 bg-surface">
 <div class="max-w-7xl mx-auto px-4">
 <div class="grid lg:grid-cols-2 gap-14 items-center">
-<div class="rounded-2xl overflow-hidden border border-white/10 order-2 lg:order-1 reveal">
+<div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm order-2 lg:order-1 reveal">
 <img src="https://images.pexels.com/photos/36411467/pexels-photo-36411467.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Clean, bright home interior" class="w-full h-[420px] object-cover"/>
 </div>
 <div class="order-1 lg:order-2 reveal">
-<span class="text-sm font-bold uppercase tracking-widest text-gold">Local &amp; Nearby</span>
-<h2 class="text-3xl lg:text-5xl font-black tracking-tight mt-3 mb-5">Proudly Serving Mansfield and Surrounding Communities</h2>
+<span class="text-sm font-bold uppercase tracking-widest text-brand">Local &amp; Nearby</span>
+<h2 class="text-3xl lg:text-5xl font-black tracking-tight mt-3 mb-5 text-ink">Proudly Serving Mansfield and Surrounding Communities</h2>
 <p class="text-muted mb-8 leading-relaxed">We are a local cleaning service through and through. If you are in Mansfield or a nearby community, we would love to help keep your home or business looking its best.</p>
 <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-<span class="flex items-center gap-2 text-sm font-semibold text-white/85"><span class="material-symbols-outlined text-gold text-lg">location_on</span>Mansfield</span>
-<span class="flex items-center gap-2 text-sm font-semibold text-white/85"><span class="material-symbols-outlined text-gold text-lg">location_on</span>Arlington</span>
-<span class="flex items-center gap-2 text-sm font-semibold text-white/85"><span class="material-symbols-outlined text-gold text-lg">location_on</span>Grand Prairie</span>
-<span class="flex items-center gap-2 text-sm font-semibold text-white/85"><span class="material-symbols-outlined text-gold text-lg">location_on</span>Midlothian</span>
-<span class="flex items-center gap-2 text-sm font-semibold text-white/85"><span class="material-symbols-outlined text-gold text-lg">location_on</span>Cedar Hill</span>
-<span class="flex items-center gap-2 text-sm font-semibold text-white/85"><span class="material-symbols-outlined text-gold text-lg">location_on</span>Desoto</span>
-<span class="flex items-center gap-2 text-sm font-semibold text-white/85"><span class="material-symbols-outlined text-gold text-lg">location_on</span>Kennedale</span>
-<span class="flex items-center gap-2 text-sm font-semibold text-white/85"><span class="material-symbols-outlined text-gold text-lg">location_on</span>Burleson</span>
-<span class="flex items-center gap-2 text-sm font-semibold text-white/85"><span class="material-symbols-outlined text-gold text-lg">location_on</span>Fort Worth</span>
-<span class="flex items-center gap-2 text-sm font-semibold text-white/85"><span class="material-symbols-outlined text-gold text-lg">location_on</span>Southlake</span>
-<span class="flex items-center gap-2 text-sm font-semibold text-white/85"><span class="material-symbols-outlined text-gold text-lg">location_on</span>Grapevine</span>
+<span class="flex items-center gap-2 text-sm font-semibold text-ink/85"><span class="material-symbols-outlined text-brand text-lg">location_on</span>Mansfield</span>
+<span class="flex items-center gap-2 text-sm font-semibold text-ink/85"><span class="material-symbols-outlined text-brand text-lg">location_on</span>Arlington</span>
+<span class="flex items-center gap-2 text-sm font-semibold text-ink/85"><span class="material-symbols-outlined text-brand text-lg">location_on</span>Grand Prairie</span>
+<span class="flex items-center gap-2 text-sm font-semibold text-ink/85"><span class="material-symbols-outlined text-brand text-lg">location_on</span>Midlothian</span>
+<span class="flex items-center gap-2 text-sm font-semibold text-ink/85"><span class="material-symbols-outlined text-brand text-lg">location_on</span>Cedar Hill</span>
+<span class="flex items-center gap-2 text-sm font-semibold text-ink/85"><span class="material-symbols-outlined text-brand text-lg">location_on</span>Desoto</span>
+<span class="flex items-center gap-2 text-sm font-semibold text-ink/85"><span class="material-symbols-outlined text-brand text-lg">location_on</span>Kennedale</span>
+<span class="flex items-center gap-2 text-sm font-semibold text-ink/85"><span class="material-symbols-outlined text-brand text-lg">location_on</span>Burleson</span>
+<span class="flex items-center gap-2 text-sm font-semibold text-ink/85"><span class="material-symbols-outlined text-brand text-lg">location_on</span>Fort Worth</span>
+<span class="flex items-center gap-2 text-sm font-semibold text-ink/85"><span class="material-symbols-outlined text-brand text-lg">location_on</span>Southlake</span>
+<span class="flex items-center gap-2 text-sm font-semibold text-ink/85"><span class="material-symbols-outlined text-brand text-lg">location_on</span>Grapevine</span>
 </div>
 <p class="text-sm text-muted mt-6">Not sure if you are in our area? Just ask, we are happy to let you know.</p>
 </div>
@@ -297,149 +296,149 @@ Dependable, detail-focused cleaning that takes the work off your plate. Book in 
 </div>
 </section>
 <!-- Testimonials -->
-<section id="reviews" class="py-20 lg:py-28 bg-ink">
+<section id="reviews" class="py-20 lg:py-28 bg-white">
 <div class="max-w-7xl mx-auto px-4">
 <div class="text-center max-w-2xl mx-auto mb-14 reveal">
-<span class="text-sm font-bold uppercase tracking-widest text-gold">Reviews</span>
-<h2 class="text-3xl lg:text-5xl font-black tracking-tight mt-3">What Our Clients Say</h2>
+<span class="text-sm font-bold uppercase tracking-widest text-brand">Reviews</span>
+<h2 class="text-3xl lg:text-5xl font-black tracking-tight mt-3 text-ink">What Our Clients Say</h2>
 </div>
 <div class="grid md:grid-cols-3 gap-6">
-<div class="rounded-2xl bg-panel border border-white/10 p-8 card-hover reveal">
-<div class="flex text-gold mb-4"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span></div>
-<p class="text-white/80 mb-8 italic leading-relaxed">"Alafia has cleaned our home every two weeks for months now. It is always done right, and I never have to follow up on anything. Total peace of mind."</p>
+<div class="rounded-2xl bg-surface border border-slate-200 p-8 card-hover reveal">
+<div class="flex text-yellow-400 mb-4"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span></div>
+<p class="text-ink/80 mb-8 italic leading-relaxed">"Alafia has cleaned our home every two weeks for months now. It is always done right, and I never have to follow up on anything. Total peace of mind."</p>
 <div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full bg-gold/15 flex items-center justify-center text-gold font-bold">DM</div>
-<div><h4 class="font-bold text-sm">Danielle M.</h4><p class="text-muted text-xs">Mansfield, TX</p></div>
+<div class="w-12 h-12 rounded-full bg-brand/10 flex items-center justify-center text-brand font-bold">DM</div>
+<div><h4 class="font-bold text-sm text-ink">Danielle M.</h4><p class="text-muted text-xs">Mansfield, TX</p></div>
 </div>
 </div>
-<div class="rounded-2xl bg-panel border border-white/10 p-8 card-hover reveal md:-translate-y-4">
-<div class="flex text-gold mb-4"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span></div>
-<p class="text-white/80 mb-8 italic leading-relaxed">"Booked a move-out clean and it was flawless. The team was professional, on time, and left the place spotless for the walkthrough."</p>
+<div class="rounded-2xl bg-surface border border-slate-200 p-8 card-hover reveal md:-translate-y-4">
+<div class="flex text-yellow-400 mb-4"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span></div>
+<p class="text-ink/80 mb-8 italic leading-relaxed">"Booked a move-out clean and it was flawless. The team was professional, on time, and left the place spotless for the walkthrough."</p>
 <div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full bg-gold/15 flex items-center justify-center text-gold font-bold">RT</div>
-<div><h4 class="font-bold text-sm">Ryan T.</h4><p class="text-muted text-xs">Arlington, TX</p></div>
+<div class="w-12 h-12 rounded-full bg-brand/10 flex items-center justify-center text-brand font-bold">RT</div>
+<div><h4 class="font-bold text-sm text-ink">Ryan T.</h4><p class="text-muted text-xs">Arlington, TX</p></div>
 </div>
 </div>
-<div class="rounded-2xl bg-panel border border-white/10 p-8 card-hover reveal">
-<div class="flex text-gold mb-4"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span></div>
-<p class="text-white/80 mb-8 italic leading-relaxed">"They are great with our two dogs and always communicate clearly about timing. Dependable service that actually cares about the details."</p>
+<div class="rounded-2xl bg-surface border border-slate-200 p-8 card-hover reveal">
+<div class="flex text-yellow-400 mb-4"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span></div>
+<p class="text-ink/80 mb-8 italic leading-relaxed">"They are great with our two dogs and always communicate clearly about timing. Dependable service that actually cares about the details."</p>
 <div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full bg-gold/15 flex items-center justify-center text-gold font-bold">SP</div>
-<div><h4 class="font-bold text-sm">Sofia P.</h4><p class="text-muted text-xs">Grand Prairie, TX</p></div>
+<div class="w-12 h-12 rounded-full bg-brand/10 flex items-center justify-center text-brand font-bold">SP</div>
+<div><h4 class="font-bold text-sm text-ink">Sofia P.</h4><p class="text-muted text-xs">Grand Prairie, TX</p></div>
 </div>
 </div>
 </div>
 </div>
 </section>
 <!-- Flexible Scheduling -->
-<section class="py-20 lg:py-28 bg-panel">
+<section class="py-20 lg:py-28 bg-surface">
 <div class="max-w-7xl mx-auto px-4">
 <div class="text-center max-w-2xl mx-auto mb-14 reveal">
-<span class="text-sm font-bold uppercase tracking-widest text-gold">Flexible Scheduling</span>
-<h2 class="text-3xl lg:text-5xl font-black tracking-tight mt-3 mb-4">Clean on Your Schedule</h2>
+<span class="text-sm font-bold uppercase tracking-widest text-brand">Flexible Scheduling</span>
+<h2 class="text-3xl lg:text-5xl font-black tracking-tight mt-3 mb-4 text-ink">Clean on Your Schedule</h2>
 <p class="text-muted">Choose the rhythm that fits your home. Recurring clients enjoy priority scheduling and the same trusted team on every visit.</p>
 </div>
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
-<div class="rounded-2xl bg-ink border border-white/10 p-8 text-center card-hover reveal">
-<div class="w-14 h-14 mx-auto bg-gold/15 rounded-lg flex items-center justify-center text-gold mb-5"><span class="material-symbols-outlined text-3xl">event_available</span></div>
-<h3 class="text-lg font-bold mb-1">One-Time</h3>
+<div class="rounded-2xl bg-white border border-slate-200 shadow-sm p-8 text-center card-hover reveal">
+<div class="w-14 h-14 mx-auto bg-brand/10 rounded-lg flex items-center justify-center text-brand mb-5"><span class="material-symbols-outlined text-3xl">event_available</span></div>
+<h3 class="text-lg font-bold mb-1 text-ink">One-Time</h3>
 <p class="text-sm text-muted">A single clean when you need it.</p>
 </div>
-<div class="rounded-2xl bg-ink border border-white/10 p-8 text-center card-hover reveal">
-<div class="w-14 h-14 mx-auto bg-gold/15 rounded-lg flex items-center justify-center text-gold mb-5"><span class="material-symbols-outlined text-3xl">calendar_view_week</span></div>
-<h3 class="text-lg font-bold mb-1">Weekly</h3>
+<div class="rounded-2xl bg-white border border-slate-200 shadow-sm p-8 text-center card-hover reveal">
+<div class="w-14 h-14 mx-auto bg-brand/10 rounded-lg flex items-center justify-center text-brand mb-5"><span class="material-symbols-outlined text-3xl">calendar_view_week</span></div>
+<h3 class="text-lg font-bold mb-1 text-ink">Weekly</h3>
 <p class="text-sm text-muted">Always guest-ready.</p>
 </div>
-<div class="rounded-2xl bg-ink border border-white/10 p-8 text-center card-hover reveal">
-<div class="w-14 h-14 mx-auto bg-gold/15 rounded-lg flex items-center justify-center text-gold mb-5"><span class="material-symbols-outlined text-3xl">date_range</span></div>
-<h3 class="text-lg font-bold mb-1">Bi-Weekly</h3>
+<div class="rounded-2xl bg-white border border-slate-200 shadow-sm p-8 text-center card-hover reveal">
+<div class="w-14 h-14 mx-auto bg-brand/10 rounded-lg flex items-center justify-center text-brand mb-5"><span class="material-symbols-outlined text-3xl">date_range</span></div>
+<h3 class="text-lg font-bold mb-1 text-ink">Bi-Weekly</h3>
 <p class="text-sm text-muted">Our most loved schedule.</p>
 </div>
-<div class="rounded-2xl bg-ink border border-white/10 p-8 text-center card-hover reveal">
-<div class="w-14 h-14 mx-auto bg-gold/15 rounded-lg flex items-center justify-center text-gold mb-5"><span class="material-symbols-outlined text-3xl">calendar_month</span></div>
-<h3 class="text-lg font-bold mb-1">Monthly</h3>
+<div class="rounded-2xl bg-white border border-slate-200 shadow-sm p-8 text-center card-hover reveal">
+<div class="w-14 h-14 mx-auto bg-brand/10 rounded-lg flex items-center justify-center text-brand mb-5"><span class="material-symbols-outlined text-3xl">calendar_month</span></div>
+<h3 class="text-lg font-bold mb-1 text-ink">Monthly</h3>
 <p class="text-sm text-muted">A reliable monthly reset.</p>
 </div>
 </div>
 </div>
 </section>
 <!-- FAQ -->
-<section id="faq" class="py-20 lg:py-28 bg-ink">
+<section id="faq" class="py-20 lg:py-28 bg-white">
 <div class="max-w-3xl mx-auto px-4">
 <div class="text-center mb-12 reveal">
-<span class="text-sm font-bold uppercase tracking-widest text-gold">FAQ</span>
-<h2 class="text-3xl lg:text-5xl font-black tracking-tight mt-3">Common Questions</h2>
+<span class="text-sm font-bold uppercase tracking-widest text-brand">FAQ</span>
+<h2 class="text-3xl lg:text-5xl font-black tracking-tight mt-3 text-ink">Common Questions</h2>
 </div>
 <div class="space-y-4 reveal">
-<details class="group rounded-xl border border-white/10 bg-panel p-6 transition-all" open>
-<summary class="flex justify-between items-center font-bold cursor-pointer list-none"><span>Are you insured and background checked?</span><span class="material-symbols-outlined text-gold group-open:rotate-180 transition-transform">expand_more</span></summary>
+<details class="group rounded-xl border border-slate-200 bg-surface p-6 transition-all" open>
+<summary class="flex justify-between items-center font-bold cursor-pointer list-none text-ink"><span>Are you insured and background checked?</span><span class="material-symbols-outlined text-brand group-open:rotate-180 transition-transform">expand_more</span></summary>
 <div class="pt-4 text-muted leading-relaxed">Yes. Alafia Cleaning is fully insured and every team member is background checked before joining, so you can feel comfortable welcoming us into your home or business.</div>
 </details>
-<details class="group rounded-xl border border-white/10 bg-panel p-6 transition-all">
-<summary class="flex justify-between items-center font-bold cursor-pointer list-none"><span>Do I need to be home during the cleaning?</span><span class="material-symbols-outlined text-gold group-open:rotate-180 transition-transform">expand_more</span></summary>
+<details class="group rounded-xl border border-slate-200 bg-surface p-6 transition-all">
+<summary class="flex justify-between items-center font-bold cursor-pointer list-none text-ink"><span>Do I need to be home during the cleaning?</span><span class="material-symbols-outlined text-brand group-open:rotate-180 transition-transform">expand_more</span></summary>
 <div class="pt-4 text-muted leading-relaxed">Not at all. Many clients set up secure access and go about their day. Whatever you are most comfortable with, we will work around it with clear communication.</div>
 </details>
-<details class="group rounded-xl border border-white/10 bg-panel p-6 transition-all">
-<summary class="flex justify-between items-center font-bold cursor-pointer list-none"><span>Do you bring your own supplies?</span><span class="material-symbols-outlined text-gold group-open:rotate-180 transition-transform">expand_more</span></summary>
+<details class="group rounded-xl border border-slate-200 bg-surface p-6 transition-all">
+<summary class="flex justify-between items-center font-bold cursor-pointer list-none text-ink"><span>Do you bring your own supplies?</span><span class="material-symbols-outlined text-brand group-open:rotate-180 transition-transform">expand_more</span></summary>
 <div class="pt-4 text-muted leading-relaxed">Yes, we arrive with the supplies and equipment needed to get the job done. If you prefer specific products for your home, just let us know and we will accommodate where we can.</div>
 </details>
-<details class="group rounded-xl border border-white/10 bg-panel p-6 transition-all">
-<summary class="flex justify-between items-center font-bold cursor-pointer list-none"><span>How do I book or reschedule?</span><span class="material-symbols-outlined text-gold group-open:rotate-180 transition-transform">expand_more</span></summary>
+<details class="group rounded-xl border border-slate-200 bg-surface p-6 transition-all">
+<summary class="flex justify-between items-center font-bold cursor-pointer list-none text-ink"><span>How do I book or reschedule?</span><span class="material-symbols-outlined text-brand group-open:rotate-180 transition-transform">expand_more</span></summary>
 <div class="pt-4 text-muted leading-relaxed">Booking is easy through our quote form, by phone, or by email. Need to move a visit? Just reach out and we will find a new time that works for you.</div>
 </details>
-<details class="group rounded-xl border border-white/10 bg-panel p-6 transition-all">
-<summary class="flex justify-between items-center font-bold cursor-pointer list-none"><span>What if I am not happy with the clean?</span><span class="material-symbols-outlined text-gold group-open:rotate-180 transition-transform">expand_more</span></summary>
+<details class="group rounded-xl border border-slate-200 bg-surface p-6 transition-all">
+<summary class="flex justify-between items-center font-bold cursor-pointer list-none text-ink"><span>What if I am not happy with the clean?</span><span class="material-symbols-outlined text-brand group-open:rotate-180 transition-transform">expand_more</span></summary>
 <div class="pt-4 text-muted leading-relaxed">Your satisfaction matters to us. If something is not right, let us know within 24 hours and we will make it right. That is our satisfaction guarantee.</div>
 </details>
 </div>
 </div>
 </section>
 <!-- Contact -->
-<section id="contact" class="py-20 lg:py-28 bg-panel">
+<section id="contact" class="py-20 lg:py-28 bg-surface">
 <div class="max-w-7xl mx-auto px-4">
 <div class="grid lg:grid-cols-2 gap-12">
 <div class="reveal">
-<span class="text-sm font-bold uppercase tracking-widest text-gold">Get in Touch</span>
-<h2 class="text-3xl lg:text-5xl font-black tracking-tight mt-3 mb-5">Request Your Free Quote</h2>
+<span class="text-sm font-bold uppercase tracking-widest text-brand">Get in Touch</span>
+<h2 class="text-3xl lg:text-5xl font-black tracking-tight mt-3 mb-5 text-ink">Request Your Free Quote</h2>
 <p class="text-muted mb-8 leading-relaxed">Ready to take cleaning off your plate? Send us a message and we will get back to you quickly with a clear, no-pressure quote.</p>
 <div class="space-y-5">
 <a href="tel:+18177014172" class="flex items-center gap-4 group">
-<div class="w-12 h-12 rounded-lg bg-gold/15 flex items-center justify-center text-gold flex-shrink-0"><span class="material-symbols-outlined">call</span></div>
-<div><p class="text-xs font-bold uppercase tracking-wider text-muted">Call or Text</p><p class="font-bold group-hover:text-gold transition-colors">(817) 701-4172</p></div>
+<div class="w-12 h-12 rounded-lg bg-brand/10 flex items-center justify-center text-brand flex-shrink-0"><span class="material-symbols-outlined">call</span></div>
+<div><p class="text-xs font-bold uppercase tracking-wider text-muted">Call or Text</p><p class="font-bold text-ink group-hover:text-brand transition-colors">(817) 701-4172</p></div>
 </a>
 <a href="mailto:contact@alafiacleaning.com" class="flex items-center gap-4 group">
-<div class="w-12 h-12 rounded-lg bg-gold/15 flex items-center justify-center text-gold flex-shrink-0"><span class="material-symbols-outlined">mail</span></div>
-<div><p class="text-xs font-bold uppercase tracking-wider text-muted">Email</p><p class="font-bold group-hover:text-gold transition-colors break-all">contact@alafiacleaning.com</p></div>
+<div class="w-12 h-12 rounded-lg bg-brand/10 flex items-center justify-center text-brand flex-shrink-0"><span class="material-symbols-outlined">mail</span></div>
+<div><p class="text-xs font-bold uppercase tracking-wider text-muted">Email</p><p class="font-bold text-ink group-hover:text-brand transition-colors break-all">contact@alafiacleaning.com</p></div>
 </a>
 <a href="https://instagram.com/alafiacleaning" target="_blank" rel="noopener" class="flex items-center gap-4 group">
-<div class="w-12 h-12 rounded-lg bg-gold/15 flex items-center justify-center text-gold flex-shrink-0"><span class="material-symbols-outlined">photo_camera</span></div>
-<div><p class="text-xs font-bold uppercase tracking-wider text-muted">Instagram</p><p class="font-bold group-hover:text-gold transition-colors">@alafiacleaning</p></div>
+<div class="w-12 h-12 rounded-lg bg-brand/10 flex items-center justify-center text-brand flex-shrink-0"><span class="material-symbols-outlined">photo_camera</span></div>
+<div><p class="text-xs font-bold uppercase tracking-wider text-muted">Instagram</p><p class="font-bold text-ink group-hover:text-brand transition-colors">@alafiacleaning</p></div>
 </a>
 <div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-lg bg-gold/15 flex items-center justify-center text-gold flex-shrink-0"><span class="material-symbols-outlined">location_on</span></div>
-<div><p class="text-xs font-bold uppercase tracking-wider text-muted">Service Area</p><p class="font-bold">Mansfield, TX and surrounding communities</p></div>
+<div class="w-12 h-12 rounded-lg bg-brand/10 flex items-center justify-center text-brand flex-shrink-0"><span class="material-symbols-outlined">location_on</span></div>
+<div><p class="text-xs font-bold uppercase tracking-wider text-muted">Service Area</p><p class="font-bold text-ink">Mansfield, TX and surrounding communities</p></div>
 </div>
 </div>
 </div>
-<div class="rounded-2xl bg-ink border border-white/10 p-8 md:p-10 reveal">
+<div class="rounded-2xl bg-white border border-slate-200 shadow-lg p-8 md:p-10 reveal">
 <form class="space-y-5" onsubmit="return handleQuote(event)">
 <div class="grid sm:grid-cols-2 gap-5">
 <div>
-<label class="text-sm font-bold text-white/90 mb-2 block">Name</label>
-<input name="name" required class="w-full rounded-lg bg-panel border-white/10 text-white placeholder-white/40 focus:border-gold focus:ring-gold" placeholder="Your name" type="text"/>
+<label class="text-sm font-bold text-ink mb-2 block">Name</label>
+<input name="name" required class="w-full rounded-lg border-slate-300 text-ink placeholder-slate-400 focus:border-brand focus:ring-brand" placeholder="Your name" type="text"/>
 </div>
 <div>
-<label class="text-sm font-bold text-white/90 mb-2 block">Phone</label>
-<input name="phone" class="w-full rounded-lg bg-panel border-white/10 text-white placeholder-white/40 focus:border-gold focus:ring-gold" placeholder="(555) 123-4567" type="tel"/>
+<label class="text-sm font-bold text-ink mb-2 block">Phone</label>
+<input name="phone" class="w-full rounded-lg border-slate-300 text-ink placeholder-slate-400 focus:border-brand focus:ring-brand" placeholder="(555) 123-4567" type="tel"/>
 </div>
 </div>
 <div>
-<label class="text-sm font-bold text-white/90 mb-2 block">Email</label>
-<input name="email" class="w-full rounded-lg bg-panel border-white/10 text-white placeholder-white/40 focus:border-gold focus:ring-gold" placeholder="your@email.com" type="email"/>
+<label class="text-sm font-bold text-ink mb-2 block">Email</label>
+<input name="email" class="w-full rounded-lg border-slate-300 text-ink placeholder-slate-400 focus:border-brand focus:ring-brand" placeholder="your@email.com" type="email"/>
 </div>
 <div>
-<label class="text-sm font-bold text-white/90 mb-2 block">Service Needed</label>
-<select name="service" class="w-full rounded-lg bg-panel border-white/10 text-white focus:border-gold focus:ring-gold">
+<label class="text-sm font-bold text-ink mb-2 block">Service Needed</label>
+<select name="service" class="w-full rounded-lg border-slate-300 text-ink focus:border-brand focus:ring-brand">
 <option>Regular House Cleaning</option>
 <option>Deep Cleaning</option>
 <option>Office / Commercial Cleaning</option>
@@ -449,84 +448,84 @@ Dependable, detail-focused cleaning that takes the work off your plate. Book in 
 </select>
 </div>
 <div>
-<label class="text-sm font-bold text-white/90 mb-2 block">Message</label>
-<textarea name="message" class="w-full rounded-lg bg-panel border-white/10 text-white placeholder-white/40 focus:border-gold focus:ring-gold" placeholder="Tell us about your home and how often you would like service..." rows="4"></textarea>
+<label class="text-sm font-bold text-ink mb-2 block">Message</label>
+<textarea name="message" class="w-full rounded-lg border-slate-300 text-ink placeholder-slate-400 focus:border-brand focus:ring-brand" placeholder="Tell us about your home and how often you would like service..." rows="4"></textarea>
 </div>
-<button class="w-full rounded-lg bg-gold py-4 text-base font-extrabold text-ink hover:brightness-95 transition-colors">Send My Request</button>
-<p id="form-note" class="hidden text-center text-sm font-semibold text-gold"></p>
+<button class="w-full rounded-lg bg-brand py-4 text-base font-extrabold text-white hover:bg-brand-dark transition-colors">Send My Request</button>
+<p id="form-note" class="hidden text-center text-sm font-semibold text-brand"></p>
 </form>
 </div>
 </div>
 </div>
 </section>
 <!-- Trust Badges -->
-<section class="py-14 bg-ink border-t border-white/10">
+<section class="py-14 bg-white border-t border-slate-200">
 <div class="max-w-7xl mx-auto px-4">
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center reveal">
-<div class="flex flex-col items-center gap-2"><span class="material-symbols-outlined text-gold text-3xl">shield</span><span class="text-sm font-bold">Fully Insured</span></div>
-<div class="flex flex-col items-center gap-2"><span class="material-symbols-outlined text-gold text-3xl">pets</span><span class="text-sm font-bold">Pet Friendly</span></div>
-<div class="flex flex-col items-center gap-2"><span class="material-symbols-outlined text-gold text-3xl">verified</span><span class="text-sm font-bold">Satisfaction Guarantee</span></div>
-<div class="flex flex-col items-center gap-2"><span class="material-symbols-outlined text-gold text-3xl">badge</span><span class="text-sm font-bold">Background Checked</span></div>
-<div class="flex flex-col items-center gap-2"><span class="material-symbols-outlined text-gold text-3xl">chat</span><span class="text-sm font-bold">Clear Communication</span></div>
-<div class="flex flex-col items-center gap-2"><span class="material-symbols-outlined text-gold text-3xl">location_city</span><span class="text-sm font-bold">Locally Owned</span></div>
+<div class="flex flex-col items-center gap-2"><span class="material-symbols-outlined text-brand text-3xl">shield</span><span class="text-sm font-bold text-ink">Fully Insured</span></div>
+<div class="flex flex-col items-center gap-2"><span class="material-symbols-outlined text-brand text-3xl">pets</span><span class="text-sm font-bold text-ink">Pet Friendly</span></div>
+<div class="flex flex-col items-center gap-2"><span class="material-symbols-outlined text-brand text-3xl">verified</span><span class="text-sm font-bold text-ink">Satisfaction Guarantee</span></div>
+<div class="flex flex-col items-center gap-2"><span class="material-symbols-outlined text-brand text-3xl">badge</span><span class="text-sm font-bold text-ink">Background Checked</span></div>
+<div class="flex flex-col items-center gap-2"><span class="material-symbols-outlined text-brand text-3xl">chat</span><span class="text-sm font-bold text-ink">Clear Communication</span></div>
+<div class="flex flex-col items-center gap-2"><span class="material-symbols-outlined text-brand text-3xl">location_city</span><span class="text-sm font-bold text-ink">Locally Owned</span></div>
 </div>
 </div>
 </section>
 <!-- Bottom CTA -->
-<section class="py-20 bg-gold text-ink">
+<section class="py-20 bg-brand text-white">
 <div class="max-w-7xl mx-auto px-4 text-center reveal">
 <h2 class="text-3xl md:text-5xl font-black tracking-tight mb-4">Clean Home. Clear Mind. Peace of Mind.</h2>
-<p class="text-ink/80 text-lg md:text-xl mb-10 max-w-2xl mx-auto font-semibold">Let Alafia Cleaning handle the cleaning so you can enjoy your space and your time.</p>
+<p class="text-white/90 text-lg md:text-xl mb-10 max-w-2xl mx-auto font-semibold">Let Alafia Cleaning handle the cleaning so you can enjoy your space and your time.</p>
 <div class="flex flex-col sm:flex-row justify-center gap-4">
-<a href="#contact" class="bg-ink text-gold hover:bg-black px-10 py-5 rounded-lg text-lg font-black transition-all">Get My Free Quote</a>
-<a href="tel:+18177014172" class="border-2 border-ink/30 text-ink hover:border-ink px-10 py-5 rounded-lg text-lg font-black transition-all">Call (817) 701-4172</a>
+<a href="#contact" class="bg-white text-brand hover:bg-slate-100 px-10 py-5 rounded-lg text-lg font-black transition-all">Get My Free Quote</a>
+<a href="tel:+18177014172" class="border-2 border-white/60 text-white hover:border-white px-10 py-5 rounded-lg text-lg font-black transition-all">Call (817) 701-4172</a>
 </div>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-ink pt-16 pb-10 border-t border-white/10">
+<footer class="bg-charcoal pt-16 pb-10 text-white/70">
 <div class="max-w-7xl mx-auto px-4">
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
 <div>
 <div class="flex items-center gap-3 mb-6">
-<img src="https://firebasestorage.googleapis.com/v0/b/skycrestwebapp.firebasestorage.app/o/clients%2FYH0XnyEt9phb3xmXCcH5PGbfjrw1%2Flogo%2F27238747-786B-44A3-A41D-9ADD5075875E.PNG?alt=media&token=0fb71575-ac26-4e11-80f5-733cb5cea823" alt="Alafia Cleaning logo" class="h-11 w-11 rounded-lg object-contain"/>
-<span class="text-xl font-extrabold tracking-tight">Alafia <span class="text-gold">Cleaning</span></span>
+<img src="https://firebasestorage.googleapis.com/v0/b/skycrestwebapp.firebasestorage.app/o/clients%2FYH0XnyEt9phb3xmXCcH5PGbfjrw1%2Flogo%2F27238747-786B-44A3-A41D-9ADD5075875E.PNG?alt=media&token=0fb71575-ac26-4e11-80f5-733cb5cea823" alt="Alafia Cleaning logo" class="h-11 w-11 rounded-lg object-contain bg-white/10 p-1"/>
+<span class="text-xl font-extrabold tracking-tight text-white">Alafia <span class="text-brand">Cleaning</span></span>
 </div>
-<p class="text-muted mb-6 leading-relaxed">Dependable residential and commercial cleaning in Mansfield, TX and surrounding communities. Clean Home. Clear Mind. Peace of Mind.</p>
-<a href="https://instagram.com/alafiacleaning" target="_blank" rel="noopener" class="inline-flex w-10 h-10 rounded-lg bg-white/5 items-center justify-center text-gold hover:bg-gold hover:text-ink transition-colors"><span class="material-symbols-outlined">photo_camera</span></a>
+<p class="mb-6 leading-relaxed">Dependable residential and commercial cleaning in Mansfield, TX and surrounding communities. Clean Home. Clear Mind. Peace of Mind.</p>
+<a href="https://instagram.com/alafiacleaning" target="_blank" rel="noopener" class="inline-flex w-10 h-10 rounded-lg bg-white/10 items-center justify-center text-white hover:bg-brand transition-colors"><span class="material-symbols-outlined">photo_camera</span></a>
 </div>
 <div>
-<h4 class="font-bold mb-6">Services</h4>
-<ul class="space-y-3 text-sm text-muted">
-<li><a class="hover:text-gold transition-colors" href="regular-house-cleaning.html">Regular House Cleaning</a></li>
-<li><a class="hover:text-gold transition-colors" href="deep-cleaning.html">Deep Cleaning</a></li>
-<li><a class="hover:text-gold transition-colors" href="office-commercial-cleaning.html">Office / Commercial Cleaning</a></li>
-<li><a class="hover:text-gold transition-colors" href="airbnb-rental-turnover.html">Airbnb / Rental Turnover</a></li>
-<li><a class="hover:text-gold transition-colors" href="move-in-move-out-cleaning.html">Move In / Move Out</a></li>
-<li><a class="hover:text-gold transition-colors" href="carpet-cleaning.html">Carpet Cleaning</a></li>
+<h4 class="font-bold mb-6 text-white">Services</h4>
+<ul class="space-y-3 text-sm">
+<li><a class="hover:text-brand transition-colors" href="regular-house-cleaning.html">Regular House Cleaning</a></li>
+<li><a class="hover:text-brand transition-colors" href="deep-cleaning.html">Deep Cleaning</a></li>
+<li><a class="hover:text-brand transition-colors" href="office-commercial-cleaning.html">Office / Commercial Cleaning</a></li>
+<li><a class="hover:text-brand transition-colors" href="airbnb-rental-turnover.html">Airbnb / Rental Turnover</a></li>
+<li><a class="hover:text-brand transition-colors" href="move-in-move-out-cleaning.html">Move In / Move Out</a></li>
+<li><a class="hover:text-brand transition-colors" href="carpet-cleaning.html">Carpet Cleaning</a></li>
 </ul>
 </div>
 <div>
-<h4 class="font-bold mb-6">Company</h4>
-<ul class="space-y-3 text-sm text-muted">
-<li><a class="hover:text-gold transition-colors" href="#about">About Us</a></li>
-<li><a class="hover:text-gold transition-colors" href="#areas">Areas We Serve</a></li>
-<li><a class="hover:text-gold transition-colors" href="#reviews">Reviews</a></li>
-<li><a class="hover:text-gold transition-colors" href="#faq">FAQ</a></li>
-<li><a class="hover:text-gold transition-colors" href="#contact">Contact</a></li>
+<h4 class="font-bold mb-6 text-white">Company</h4>
+<ul class="space-y-3 text-sm">
+<li><a class="hover:text-brand transition-colors" href="#about">About Us</a></li>
+<li><a class="hover:text-brand transition-colors" href="#areas">Areas We Serve</a></li>
+<li><a class="hover:text-brand transition-colors" href="#reviews">Reviews</a></li>
+<li><a class="hover:text-brand transition-colors" href="#faq">FAQ</a></li>
+<li><a class="hover:text-brand transition-colors" href="#contact">Contact</a></li>
 </ul>
 </div>
 <div>
-<h4 class="font-bold mb-6">Get in Touch</h4>
-<ul class="space-y-3 text-sm text-muted">
-<li><a class="hover:text-gold transition-colors flex items-center gap-2" href="tel:+18177014172"><span class="material-symbols-outlined text-base">call</span>(817) 701-4172</a></li>
-<li><a class="hover:text-gold transition-colors flex items-center gap-2 break-all" href="mailto:contact@alafiacleaning.com"><span class="material-symbols-outlined text-base">mail</span>contact@alafiacleaning.com</a></li>
+<h4 class="font-bold mb-6 text-white">Get in Touch</h4>
+<ul class="space-y-3 text-sm">
+<li><a class="hover:text-brand transition-colors flex items-center gap-2" href="tel:+18177014172"><span class="material-symbols-outlined text-base">call</span>(817) 701-4172</a></li>
+<li><a class="hover:text-brand transition-colors flex items-center gap-2 break-all" href="mailto:contact@alafiacleaning.com"><span class="material-symbols-outlined text-base">mail</span>contact@alafiacleaning.com</a></li>
 <li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">location_on</span>Mansfield, TX</li>
 </ul>
 </div>
 </div>
-<div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold text-muted uppercase tracking-widest">
+<div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold uppercase tracking-widest">
 <p>© 2026 Alafia Cleaning. All rights reserved.</p>
 <div class="flex gap-8"><span>Fully Insured</span><span>Satisfaction Guarantee</span></div>
 </div>
@@ -552,12 +551,11 @@ Dependable, detail-focused cleaning that takes the work off your plate. Book in 
         e.target.reset();
         return false;
     }
-    // Scroll reveal animations
     (function () {
         const els = document.querySelectorAll('.reveal');
         if (!('IntersectionObserver' in window)) { els.forEach(function (el) { el.classList.add('in'); }); return; }
         const io = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry, i) {
+            entries.forEach(function (entry) {
                 if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
             });
         }, { threshold: 0.12 });
