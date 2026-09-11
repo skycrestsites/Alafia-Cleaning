@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Deep Cleaning in Mansfield, TX | Alafia Cleaning</title>
-<meta name="description" content="Thorough deep cleaning in Mansfield, TX and surrounding communities. A detailed top-to-bottom reset for your home. Fully insured and detail-focused. Free Quote."/>
+<meta name="description" content="Thorough deep cleaning in Mansfield, TX and surrounding communities. A detailed top-to-bottom reset for your home. Fully insured and detail-focused. Request a free quote."/>
 <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/skycrestwebapp.firebasestorage.app/o/clients%2FYH0XnyEt9phb3xmXCcH5PGbfjrw1%2Flogo%2F27238747-786B-44A3-A41D-9ADD5075875E.PNG?alt=media&token=0fb71575-ac26-4e11-80f5-733cb5cea823"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
@@ -12,173 +12,185 @@
 <script id="tailwind-config">
     tailwind.config = {
         theme: { extend: {
-            colors: { "primary": "#001847", "secondary": "#4c56af", "accent": "#959efd", "background-light": "#f5f7fb" },
-            fontFamily: { "display": ["Manrope", "sans-serif"] },
-            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            colors: { gold: "#ffe100", ink: "#0a0a0a", panel: "#141414", panel2: "#1c1c1c", muted: "#9a9a9a" },
+            fontFamily: { display: ["Manrope", "sans-serif"] },
         } },
     }
 </script>
 <style>
+    html { scroll-behavior: smooth; }
     body { font-family: 'Manrope', sans-serif; }
     .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); }
+    .reveal.in { opacity: 1; transform: none; }
+    .card-hover { transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+    .card-hover:hover { transform: translateY(-6px); }
     .dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
-    .dropdown-menu { opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.2s ease; }
+    .dropdown-menu { opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all .2s ease; }
+    ::selection { background: #ffe100; color: #0a0a0a; }
 </style>
 </head>
-<body class="bg-background-light text-slate-900">
-<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-white/90 backdrop-blur-md">
+<body class="bg-ink text-white font-display">
+<!-- Header -->
+<header class="sticky top-0 z-50 w-full border-b border-white/10 bg-ink/90 backdrop-blur-md">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex h-20 items-center justify-between">
 <a href="index.html" class="flex items-center gap-3">
 <img src="https://firebasestorage.googleapis.com/v0/b/skycrestwebapp.firebasestorage.app/o/clients%2FYH0XnyEt9phb3xmXCcH5PGbfjrw1%2Flogo%2F27238747-786B-44A3-A41D-9ADD5075875E.PNG?alt=media&token=0fb71575-ac26-4e11-80f5-733cb5cea823" alt="Alafia Cleaning logo" class="h-12 w-12 rounded-lg object-contain"/>
-<span class="text-xl font-extrabold tracking-tight text-primary leading-none">Alafia Cleaning</span>
+<span class="text-xl font-extrabold tracking-tight leading-none">Alafia <span class="text-gold">Cleaning</span></span>
 </a>
 <nav class="hidden lg:flex items-center gap-8">
-<a class="text-sm font-semibold hover:text-secondary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-semibold text-white/90 hover:text-gold transition-colors" href="index.html">Home</a>
 <div class="dropdown relative group">
-<a class="text-sm font-semibold hover:text-secondary transition-colors cursor-pointer flex items-center gap-1" href="index.html#services">Services <span class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span></a>
+<a class="text-sm font-semibold text-white/90 hover:text-gold transition-colors cursor-pointer flex items-center gap-1" href="index.html#services">Services <span class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span></a>
 <div class="dropdown-menu absolute left-0 top-full pt-3">
-<div class="bg-white shadow-xl rounded-xl border border-slate-200 overflow-hidden min-w-[260px]">
-<a class="block px-5 py-3 hover:bg-primary hover:text-white transition-colors text-sm font-medium border-b border-slate-100" href="regular-house-cleaning.html">Regular House Cleaning</a>
-<a class="block px-5 py-3 hover:bg-primary hover:text-white transition-colors text-sm font-medium border-b border-slate-100" href="deep-cleaning.html">Deep Cleaning</a>
-<a class="block px-5 py-3 hover:bg-primary hover:text-white transition-colors text-sm font-medium border-b border-slate-100" href="office-commercial-cleaning.html">Office / Commercial Cleaning</a>
-<a class="block px-5 py-3 hover:bg-primary hover:text-white transition-colors text-sm font-medium border-b border-slate-100" href="airbnb-rental-turnover.html">Airbnb / Rental Turnover</a>
-<a class="block px-5 py-3 hover:bg-primary hover:text-white transition-colors text-sm font-medium border-b border-slate-100" href="move-in-move-out-cleaning.html">Move In / Move Out Cleaning</a>
-<a class="block px-5 py-3 hover:bg-primary hover:text-white transition-colors text-sm font-medium" href="carpet-cleaning.html">Carpet Cleaning</a>
+<div class="bg-panel shadow-2xl rounded-xl border border-white/10 overflow-hidden min-w-[260px]">
+<a class="block px-5 py-3 hover:bg-gold hover:text-ink transition-colors text-sm font-medium border-b border-white/5" href="regular-house-cleaning.html">Regular House Cleaning</a>
+<a class="block px-5 py-3 hover:bg-gold hover:text-ink transition-colors text-sm font-medium border-b border-white/5" href="deep-cleaning.html">Deep Cleaning</a>
+<a class="block px-5 py-3 hover:bg-gold hover:text-ink transition-colors text-sm font-medium border-b border-white/5" href="office-commercial-cleaning.html">Office / Commercial Cleaning</a>
+<a class="block px-5 py-3 hover:bg-gold hover:text-ink transition-colors text-sm font-medium border-b border-white/5" href="airbnb-rental-turnover.html">Airbnb / Rental Turnover</a>
+<a class="block px-5 py-3 hover:bg-gold hover:text-ink transition-colors text-sm font-medium border-b border-white/5" href="move-in-move-out-cleaning.html">Move In / Move Out Cleaning</a>
+<a class="block px-5 py-3 hover:bg-gold hover:text-ink transition-colors text-sm font-medium" href="carpet-cleaning.html">Carpet Cleaning</a>
 </div>
 </div>
 </div>
-<a class="text-sm font-semibold hover:text-secondary transition-colors" href="index.html#about">About</a>
-<a class="text-sm font-semibold hover:text-secondary transition-colors" href="index.html#areas">Areas</a>
-<a class="text-sm font-semibold hover:text-secondary transition-colors" href="index.html#reviews">Reviews</a>
-<a class="text-sm font-semibold hover:text-secondary transition-colors" href="index.html#contact">Contact</a>
+<a class="text-sm font-semibold text-white/90 hover:text-gold transition-colors" href="index.html#about">About</a>
+<a class="text-sm font-semibold text-white/90 hover:text-gold transition-colors" href="index.html#areas">Areas</a>
+<a class="text-sm font-semibold text-white/90 hover:text-gold transition-colors" href="index.html#reviews">Reviews</a>
+<a class="text-sm font-semibold text-white/90 hover:text-gold transition-colors" href="index.html#faq">FAQ</a>
 </nav>
 <div class="flex items-center gap-3">
-<a href="tel:+18177014172" class="hidden sm:flex items-center gap-2 text-sm font-bold text-primary hover:text-secondary transition-colors"><span class="material-symbols-outlined text-lg">call</span>(817) 701-4172</a>
-<a href="index.html#contact" class="hidden sm:inline-flex items-center justify-center rounded-lg bg-primary px-5 py-2.5 text-sm font-bold text-white hover:bg-secondary transition-all">Book Now</a>
-<button id="menu-btn" aria-label="Open menu" class="lg:hidden flex items-center justify-center h-11 w-11 rounded-lg text-primary hover:bg-primary/5"><span class="material-symbols-outlined text-3xl">menu</span></button>
+<a href="tel:+18177014172" class="hidden sm:flex items-center gap-2 text-sm font-bold text-white hover:text-gold transition-colors"><span class="material-symbols-outlined text-lg">call</span>(817) 701-4172</a>
+<a href="index.html#contact" class="hidden sm:inline-flex items-center justify-center rounded-lg bg-gold px-5 py-2.5 text-sm font-extrabold text-ink hover:brightness-95 transition-all">Request a Quote</a>
+<button id="menu-btn" aria-label="Open menu" class="lg:hidden flex items-center justify-center h-11 w-11 rounded-lg text-gold hover:bg-white/5"><span class="material-symbols-outlined text-3xl">menu</span></button>
 </div>
 </div>
 </div>
-<div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white">
+<div id="mobile-menu" class="hidden lg:hidden border-t border-white/10 bg-ink">
 <nav class="px-4 py-4 flex flex-col gap-1">
-<a class="rounded-lg px-4 py-3 font-semibold hover:bg-primary/5" href="index.html">Home</a>
-<span class="px-4 pt-3 pb-1 text-xs font-bold uppercase tracking-wider text-slate-400">Services</span>
-<a class="rounded-lg px-4 py-2.5 text-sm hover:bg-primary/5" href="regular-house-cleaning.html">Regular House Cleaning</a>
-<a class="rounded-lg px-4 py-2.5 text-sm hover:bg-primary/5" href="deep-cleaning.html">Deep Cleaning</a>
-<a class="rounded-lg px-4 py-2.5 text-sm hover:bg-primary/5" href="office-commercial-cleaning.html">Office / Commercial Cleaning</a>
-<a class="rounded-lg px-4 py-2.5 text-sm hover:bg-primary/5" href="airbnb-rental-turnover.html">Airbnb / Rental Turnover</a>
-<a class="rounded-lg px-4 py-2.5 text-sm hover:bg-primary/5" href="move-in-move-out-cleaning.html">Move In / Move Out Cleaning</a>
-<a class="rounded-lg px-4 py-2.5 text-sm hover:bg-primary/5" href="carpet-cleaning.html">Carpet Cleaning</a>
-<a class="rounded-lg px-4 py-3 font-semibold hover:bg-primary/5" href="index.html#about">About</a>
-<a class="rounded-lg px-4 py-3 font-semibold hover:bg-primary/5" href="index.html#areas">Areas We Serve</a>
-<a class="rounded-lg px-4 py-3 font-semibold hover:bg-primary/5" href="index.html#reviews">Reviews</a>
-<a class="rounded-lg px-4 py-3 font-semibold hover:bg-primary/5" href="index.html#contact">Contact</a>
-<a href="index.html#contact" class="mt-2 rounded-lg bg-primary px-4 py-3 text-center font-bold text-white">Book Now</a>
-<a href="tel:+18177014172" class="rounded-lg border border-primary/20 px-4 py-3 text-center font-bold text-primary">Call (817) 701-4172</a>
+<a class="rounded-lg px-4 py-3 font-semibold hover:bg-white/5" href="index.html">Home</a>
+<span class="px-4 pt-3 pb-1 text-xs font-bold uppercase tracking-wider text-muted">Services</span>
+<a class="rounded-lg px-4 py-2.5 text-sm hover:bg-white/5" href="regular-house-cleaning.html">Regular House Cleaning</a>
+<a class="rounded-lg px-4 py-2.5 text-sm hover:bg-white/5" href="deep-cleaning.html">Deep Cleaning</a>
+<a class="rounded-lg px-4 py-2.5 text-sm hover:bg-white/5" href="office-commercial-cleaning.html">Office / Commercial Cleaning</a>
+<a class="rounded-lg px-4 py-2.5 text-sm hover:bg-white/5" href="airbnb-rental-turnover.html">Airbnb / Rental Turnover</a>
+<a class="rounded-lg px-4 py-2.5 text-sm hover:bg-white/5" href="move-in-move-out-cleaning.html">Move In / Move Out Cleaning</a>
+<a class="rounded-lg px-4 py-2.5 text-sm hover:bg-white/5" href="carpet-cleaning.html">Carpet Cleaning</a>
+<a class="rounded-lg px-4 py-3 font-semibold hover:bg-white/5" href="index.html#about">About</a>
+<a class="rounded-lg px-4 py-3 font-semibold hover:bg-white/5" href="index.html#areas">Areas We Serve</a>
+<a class="rounded-lg px-4 py-3 font-semibold hover:bg-white/5" href="index.html#reviews">Reviews</a>
+<a class="rounded-lg px-4 py-3 font-semibold hover:bg-white/5" href="index.html#faq">FAQ</a>
+<a href="index.html#contact" class="mt-2 rounded-lg bg-gold px-4 py-3 text-center font-extrabold text-ink">Request a Quote</a>
+<a href="tel:+18177014172" class="rounded-lg border border-gold/40 px-4 py-3 text-center font-bold text-gold">Call (817) 701-4172</a>
 </nav>
 </div>
 </header>
 <main>
-<section class="relative py-20 lg:py-28 bg-primary text-white overflow-hidden">
-<div class="absolute inset-0 opacity-20 bg-center bg-cover" style="background-image: url('https://images.pexels.com/photos/5591852/pexels-photo-5591852.jpeg?auto=compress&cs=tinysrgb&w=1600');"></div>
-<div class="absolute inset-0 bg-primary/70"></div>
-<div class="relative z-10 max-w-7xl mx-auto px-4">
-<nav class="text-sm text-accent mb-4 font-semibold"><a href="index.html" class="hover:text-white">Home</a> / <span class="text-white">Deep Cleaning</span></nav>
-<span class="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-bold text-accent mb-5 uppercase tracking-wider">Free Quote</span>
-<h1 class="text-4xl lg:text-5xl font-black mb-4 max-w-3xl">Deep Cleaning</h1>
-<p class="text-slate-200 text-lg max-w-2xl">A detailed, top-to-bottom reset that reaches the spots everyday cleaning tends to miss.</p>
+<!-- Page Hero -->
+<section class="relative py-20 lg:py-28 overflow-hidden">
+<div class="absolute inset-0 bg-center bg-cover" style="background-image: url('https://images.pexels.com/photos/5591852/pexels-photo-5591852.jpeg?auto=compress&cs=tinysrgb&w=1600');"></div>
+<div class="absolute inset-0 bg-ink/80"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/70"></div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 reveal">
+<nav class="text-sm text-muted mb-4 font-semibold"><a href="index.html" class="hover:text-gold">Home</a> <span class="text-white/40">/</span> <span class="text-gold">Deep Cleaning</span></nav>
+<span class="inline-flex items-center rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-bold text-gold mb-5 uppercase tracking-widest">Free Quote</span>
+<h1 class="text-4xl lg:text-6xl font-black tracking-tight mb-4 max-w-3xl">Deep Cleaning</h1>
+<p class="text-white/80 text-lg max-w-2xl">A detailed, top-to-bottom reset that reaches the spots everyday cleaning tends to miss.</p>
 </div>
 </section>
-<section class="py-16 lg:py-24">
+<!-- Content -->
+<section class="py-16 lg:py-24 bg-ink">
 <div class="max-w-7xl mx-auto px-4">
 <div class="grid lg:grid-cols-3 gap-12">
-<div class="lg:col-span-2">
-<h2 class="text-3xl font-black mb-5 text-primary">A Fresh Start for Your Whole Home</h2>
-<p class="text-slate-600 leading-relaxed mb-4">Some jobs call for more than a routine clean. Our deep cleaning service is a thorough, detail-focused reset that gets into the corners, edges, and surfaces that build up over time. It is the perfect choice before guests arrive, at the change of a season, or as the ideal first visit before starting recurring service.</p>
-<p class="text-slate-600 leading-relaxed mb-8">We take our time and work through your home methodically, so every room feels genuinely refreshed. When we are done, your space does not just look clean, it feels clean.</p>
-<h3 class="text-xl font-bold mb-5 text-primary">What Is Included</h3>
+<div class="lg:col-span-2 reveal">
+<h2 class="text-3xl font-black mb-5">A Fresh Start for Your Whole Home</h2>
+<p class="text-muted leading-relaxed mb-4">Some jobs call for more than a routine clean. Our deep cleaning service is a thorough, detail-focused reset that gets into the corners, edges, and surfaces that build up over time. It is the perfect choice before guests arrive, at the change of a season, or as the ideal first visit before starting recurring service.</p>
+<p class="text-muted leading-relaxed mb-8">We take our time and work through your home methodically, so every room feels genuinely refreshed. When we are done, your space does not just look clean, it feels clean.</p>
+<h3 class="text-xl font-bold mb-5 text-gold">What Is Included</h3>
 <div class="grid sm:grid-cols-2 gap-x-8 gap-y-3 mb-10">
-<div class="flex items-start gap-2 text-slate-700"><span class="material-symbols-outlined text-secondary">check_circle</span>Detailed dusting, including baseboards</div>
-<div class="flex items-start gap-2 text-slate-700"><span class="material-symbols-outlined text-secondary">check_circle</span>Scrubbing kitchen surfaces and appliances</div>
-<div class="flex items-start gap-2 text-slate-700"><span class="material-symbols-outlined text-secondary">check_circle</span>Deep bathroom cleaning and sanitizing</div>
-<div class="flex items-start gap-2 text-slate-700"><span class="material-symbols-outlined text-secondary">check_circle</span>Cabinet fronts and door frames</div>
-<div class="flex items-start gap-2 text-slate-700"><span class="material-symbols-outlined text-secondary">check_circle</span>Edge-to-edge floor cleaning</div>
-<div class="flex items-start gap-2 text-slate-700"><span class="material-symbols-outlined text-secondary">check_circle</span>Light fixtures and switch plates</div>
-<div class="flex items-start gap-2 text-slate-700"><span class="material-symbols-outlined text-secondary">check_circle</span>Interior windows and sills</div>
-<div class="flex items-start gap-2 text-slate-700"><span class="material-symbols-outlined text-secondary">check_circle</span>High-touch areas throughout</div>
+<div class="flex items-start gap-2 text-white/85"><span class="material-symbols-outlined text-gold">check_circle</span>Detailed dusting, including baseboards</div>
+<div class="flex items-start gap-2 text-white/85"><span class="material-symbols-outlined text-gold">check_circle</span>Scrubbing kitchen surfaces and appliances</div>
+<div class="flex items-start gap-2 text-white/85"><span class="material-symbols-outlined text-gold">check_circle</span>Deep bathroom cleaning and sanitizing</div>
+<div class="flex items-start gap-2 text-white/85"><span class="material-symbols-outlined text-gold">check_circle</span>Cabinet fronts and door frames</div>
+<div class="flex items-start gap-2 text-white/85"><span class="material-symbols-outlined text-gold">check_circle</span>Edge-to-edge floor cleaning</div>
+<div class="flex items-start gap-2 text-white/85"><span class="material-symbols-outlined text-gold">check_circle</span>Light fixtures and switch plates</div>
+<div class="flex items-start gap-2 text-white/85"><span class="material-symbols-outlined text-gold">check_circle</span>Interior windows and sills</div>
+<div class="flex items-start gap-2 text-white/85"><span class="material-symbols-outlined text-gold">check_circle</span>High-touch areas throughout</div>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
 <img alt="Deep cleaning a kitchen" class="rounded-xl object-cover w-full h-48" src="https://images.pexels.com/photos/5591852/pexels-photo-5591852.jpeg?auto=compress&cs=tinysrgb&w=600"/>
-<img alt="Cleaning surfaces in detail" class="rounded-xl object-cover w-full h-48" src="https://images.pexels.com/photos/32908422/pexels-photo-32908422.jpeg?auto=compress&cs=tinysrgb&w=600"/>
-<img alt="Spotless bathroom" class="rounded-xl object-cover w-full h-48" src="https://images.pexels.com/photos/9462644/pexels-photo-9462644.jpeg?auto=compress&cs=tinysrgb&w=600"/>
+<img alt="Scrubbing tiles in detail" class="rounded-xl object-cover w-full h-48" src="https://images.pexels.com/photos/32908422/pexels-photo-32908422.jpeg?auto=compress&cs=tinysrgb&w=600"/>
+<img alt="Cleaning a bathroom sink" class="rounded-xl object-cover w-full h-48" src="https://images.pexels.com/photos/9462644/pexels-photo-9462644.jpeg?auto=compress&cs=tinysrgb&w=600"/>
 </div>
 </div>
 <aside class="lg:col-span-1">
-<div class="bg-white rounded-2xl border border-slate-200 shadow-lg p-8 sticky top-28">
-<h3 class="text-xl font-bold text-primary mb-1">Book This Service</h3>
-<p class="text-sm text-slate-500 mb-6">Every home is different, so your quote is tailored to your space. Request yours in about a minute.</p>
-<ul class="space-y-3 text-sm text-slate-600 mb-6">
-<li class="flex gap-2"><span class="material-symbols-outlined text-secondary text-lg">check_circle</span>Great before recurring service</li>
-<li class="flex gap-2"><span class="material-symbols-outlined text-secondary text-lg">check_circle</span>Detail-focused and thorough</li>
-<li class="flex gap-2"><span class="material-symbols-outlined text-secondary text-lg">check_circle</span>Fully insured and pet friendly</li>
+<div class="rounded-2xl bg-panel border border-white/10 shadow-xl p-8 sticky top-28 reveal">
+<h3 class="text-xl font-bold mb-1">Book This Service</h3>
+<p class="text-sm text-muted mb-6">A thorough reset for your whole home. Great before recurring service.</p>
+<ul class="space-y-3 text-sm text-white/85 mb-6">
+<li class="flex gap-2"><span class="material-symbols-outlined text-gold text-lg">check_circle</span>Great before recurring service</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-gold text-lg">check_circle</span>Detail-focused and thorough</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-gold text-lg">check_circle</span>Fully insured and pet friendly</li>
 </ul>
-<a href="index.html#contact" class="block text-center rounded-lg bg-primary py-3.5 font-bold text-white hover:bg-secondary transition-colors mb-3">Get a Free Quote</a>
-<a href="tel:+18177014172" class="block text-center rounded-lg border border-primary/20 py-3.5 font-bold text-primary hover:bg-primary/5 transition-colors">Call (817) 701-4172</a>
+<a href="index.html#contact" class="block text-center rounded-lg bg-gold py-3.5 font-extrabold text-ink hover:brightness-95 transition-colors mb-3">Get a Free Quote</a>
+<a href="tel:+18177014172" class="block text-center rounded-lg border border-white/20 py-3.5 font-bold text-white hover:border-gold hover:text-gold transition-colors">Call (817) 701-4172</a>
 </div>
 </aside>
 </div>
 </div>
 </section>
-<section class="py-16 bg-primary relative overflow-hidden">
-<div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
-<h2 class="text-3xl md:text-4xl font-black text-white mb-4">Give Your Home a True Reset</h2>
-<p class="text-accent text-lg mb-8 max-w-2xl mx-auto">Book a deep clean with Alafia and feel the difference in every room.</p>
-<a href="index.html#contact" class="inline-block bg-white text-primary hover:bg-accent px-10 py-4 rounded-lg text-lg font-black transition-all shadow-2xl">Get My Free Quote</a>
+<!-- CTA -->
+<section class="py-16 bg-gold text-ink">
+<div class="max-w-7xl mx-auto px-4 text-center reveal">
+<h2 class="text-3xl md:text-4xl font-black mb-4">Give Your Home a True Reset</h2>
+<p class="text-ink/80 text-lg mb-8 max-w-2xl mx-auto font-semibold">Book a deep clean with Alafia and feel the difference in every room.</p>
+<a href="index.html#contact" class="inline-block bg-ink text-gold hover:bg-black px-10 py-4 rounded-lg text-lg font-black transition-all">Get My Free Quote</a>
 </div>
 </section>
 </main>
-<footer class="bg-white pt-16 pb-10 border-t border-slate-200">
+<!-- Footer -->
+<footer class="bg-ink pt-16 pb-10 border-t border-white/10">
 <div class="max-w-7xl mx-auto px-4">
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
 <div>
 <div class="flex items-center gap-3 mb-6">
 <img src="https://firebasestorage.googleapis.com/v0/b/skycrestwebapp.firebasestorage.app/o/clients%2FYH0XnyEt9phb3xmXCcH5PGbfjrw1%2Flogo%2F27238747-786B-44A3-A41D-9ADD5075875E.PNG?alt=media&token=0fb71575-ac26-4e11-80f5-733cb5cea823" alt="Alafia Cleaning logo" class="h-11 w-11 rounded-lg object-contain"/>
-<span class="text-xl font-extrabold tracking-tight text-primary">Alafia Cleaning</span>
+<span class="text-xl font-extrabold tracking-tight">Alafia <span class="text-gold">Cleaning</span></span>
 </div>
-<p class="text-slate-500 mb-6 leading-relaxed">Dependable residential and commercial cleaning in Mansfield, TX and surrounding communities. Clean Home. Clear Mind. Peace of Mind.</p>
-<a href="https://instagram.com/alafiacleaning" target="_blank" rel="noopener" class="inline-flex w-10 h-10 rounded bg-slate-100 items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors"><span class="material-symbols-outlined">photo_camera</span></a>
+<p class="text-muted mb-6 leading-relaxed">Dependable residential and commercial cleaning in Mansfield, TX and surrounding communities. Clean Home. Clear Mind. Peace of Mind.</p>
+<a href="https://instagram.com/alafiacleaning" target="_blank" rel="noopener" class="inline-flex w-10 h-10 rounded-lg bg-white/5 items-center justify-center text-gold hover:bg-gold hover:text-ink transition-colors"><span class="material-symbols-outlined">photo_camera</span></a>
 </div>
 <div>
-<h4 class="font-bold mb-6 text-primary">Services</h4>
-<ul class="space-y-3 text-sm text-slate-500">
-<li><a class="hover:text-secondary transition-colors" href="regular-house-cleaning.html">Regular House Cleaning</a></li>
-<li><a class="hover:text-secondary transition-colors" href="deep-cleaning.html">Deep Cleaning</a></li>
-<li><a class="hover:text-secondary transition-colors" href="office-commercial-cleaning.html">Office / Commercial Cleaning</a></li>
-<li><a class="hover:text-secondary transition-colors" href="airbnb-rental-turnover.html">Airbnb / Rental Turnover</a></li>
-<li><a class="hover:text-secondary transition-colors" href="move-in-move-out-cleaning.html">Move In / Move Out</a></li>
-<li><a class="hover:text-secondary transition-colors" href="carpet-cleaning.html">Carpet Cleaning</a></li>
+<h4 class="font-bold mb-6">Services</h4>
+<ul class="space-y-3 text-sm text-muted">
+<li><a class="hover:text-gold transition-colors" href="regular-house-cleaning.html">Regular House Cleaning</a></li>
+<li><a class="hover:text-gold transition-colors" href="deep-cleaning.html">Deep Cleaning</a></li>
+<li><a class="hover:text-gold transition-colors" href="office-commercial-cleaning.html">Office / Commercial Cleaning</a></li>
+<li><a class="hover:text-gold transition-colors" href="airbnb-rental-turnover.html">Airbnb / Rental Turnover</a></li>
+<li><a class="hover:text-gold transition-colors" href="move-in-move-out-cleaning.html">Move In / Move Out</a></li>
+<li><a class="hover:text-gold transition-colors" href="carpet-cleaning.html">Carpet Cleaning</a></li>
 </ul>
 </div>
 <div>
-<h4 class="font-bold mb-6 text-primary">Company</h4>
-<ul class="space-y-3 text-sm text-slate-500">
-<li><a class="hover:text-secondary transition-colors" href="index.html#about">About Us</a></li>
-<li><a class="hover:text-secondary transition-colors" href="index.html#areas">Areas We Serve</a></li>
-<li><a class="hover:text-secondary transition-colors" href="index.html#reviews">Reviews</a></li>
-<li><a class="hover:text-secondary transition-colors" href="index.html#contact">Contact</a></li>
+<h4 class="font-bold mb-6">Company</h4>
+<ul class="space-y-3 text-sm text-muted">
+<li><a class="hover:text-gold transition-colors" href="index.html#about">About Us</a></li>
+<li><a class="hover:text-gold transition-colors" href="index.html#areas">Areas We Serve</a></li>
+<li><a class="hover:text-gold transition-colors" href="index.html#reviews">Reviews</a></li>
+<li><a class="hover:text-gold transition-colors" href="index.html#faq">FAQ</a></li>
+<li><a class="hover:text-gold transition-colors" href="index.html#contact">Contact</a></li>
 </ul>
 </div>
 <div>
-<h4 class="font-bold mb-6 text-primary">Get in Touch</h4>
-<ul class="space-y-3 text-sm text-slate-500">
-<li><a class="hover:text-secondary transition-colors flex items-center gap-2" href="tel:+18177014172"><span class="material-symbols-outlined text-base">call</span>(817) 701-4172</a></li>
-<li><a class="hover:text-secondary transition-colors flex items-center gap-2 break-all" href="mailto:contact@alafiacleaning.com"><span class="material-symbols-outlined text-base">mail</span>contact@alafiacleaning.com</a></li>
+<h4 class="font-bold mb-6">Get in Touch</h4>
+<ul class="space-y-3 text-sm text-muted">
+<li><a class="hover:text-gold transition-colors flex items-center gap-2" href="tel:+18177014172"><span class="material-symbols-outlined text-base">call</span>(817) 701-4172</a></li>
+<li><a class="hover:text-gold transition-colors flex items-center gap-2 break-all" href="mailto:contact@alafiacleaning.com"><span class="material-symbols-outlined text-base">mail</span>contact@alafiacleaning.com</a></li>
 <li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">location_on</span>Mansfield, TX</li>
 </ul>
 </div>
 </div>
-<div class="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold text-slate-400 uppercase tracking-widest">
+<div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold text-muted uppercase tracking-widest">
 <p>© 2026 Alafia Cleaning. All rights reserved.</p>
 <div class="flex gap-8"><span>Fully Insured</span><span>Satisfaction Guarantee</span></div>
 </div>
@@ -189,9 +201,15 @@
     const mobileMenu = document.getElementById('mobile-menu');
     menuBtn.addEventListener('click', function () {
         mobileMenu.classList.toggle('hidden');
-        const icon = menuBtn.querySelector('.material-symbols-outlined');
-        icon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+        menuBtn.querySelector('.material-symbols-outlined').textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
     });
+    mobileMenu.querySelectorAll('a').forEach(function (link) { link.addEventListener('click', function () { mobileMenu.classList.add('hidden'); menuBtn.querySelector('.material-symbols-outlined').textContent = 'menu'; }); });
+    (function () {
+        const els = document.querySelectorAll('.reveal');
+        if (!('IntersectionObserver' in window)) { els.forEach(function (el) { el.classList.add('in'); }); return; }
+        const io = new IntersectionObserver(function (entries) { entries.forEach(function (entry) { if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); } }); }, { threshold: 0.12 });
+        els.forEach(function (el) { io.observe(el); });
+    })();
 </script>
 </body>
 </html>
